@@ -5,5 +5,6 @@
 
         HW.TwoSumDict(9);
         
+        HW.StudentList();
     }
 }
