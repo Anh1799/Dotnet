@@ -3,8 +3,10 @@
 
         //HW.TwoSum(9);
 
-        HW.TwoSumDict(9);
+        //HW.TwoSumDict(9);
         
-        HW.StudentList();
+        //HW.StudentList();
+
+        HW.BuyandSellStock();
     }
 }
