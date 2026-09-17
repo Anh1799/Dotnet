@@ -1,0 +1,30 @@
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/LS8/ls8_oop/bin/Debug/net10.0/ls8_oop
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/LS8/ls8_oop/bin/Debug/net10.0/ls8_oop.deps.json
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/LS8/ls8_oop/bin/Debug/net10.0/ls8_oop.runtimeconfig.json
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/LS8/ls8_oop/bin/Debug/net10.0/ls8_oop.dll
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/LS8/ls8_oop/bin/Debug/net10.0/ls8_oop.pdb
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/LS8/ls8_oop/obj/Debug/net10.0/ls8_oop.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/LS8/ls8_oop/obj/Debug/net10.0/ls8_oop.AssemblyInfoInputs.cache
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/LS8/ls8_oop/obj/Debug/net10.0/ls8_oop.AssemblyInfo.cs
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/LS8/ls8_oop/obj/Debug/net10.0/ls8_oop.csproj.CoreCompileInputs.cache
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/LS8/ls8_oop/obj/Debug/net10.0/ls8_oop.sourcelink.json
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/LS8/ls8_oop/obj/Debug/net10.0/ls8_oop.dll
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/LS8/ls8_oop/obj/Debug/net10.0/refint/ls8_oop.dll
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/LS8/ls8_oop/obj/Debug/net10.0/ls8_oop.pdb
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/LS8/ls8_oop/obj/Debug/net10.0/ls8_oop.genruntimeconfig.cache
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/LS8/ls8_oop/obj/Debug/net10.0/ref/ls8_oop.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/LS8/ls8_oop/bin/Debug/net10.0/ls8_oop
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/LS8/ls8_oop/bin/Debug/net10.0/ls8_oop.deps.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/LS8/ls8_oop/bin/Debug/net10.0/ls8_oop.runtimeconfig.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/LS8/ls8_oop/bin/Debug/net10.0/ls8_oop.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/LS8/ls8_oop/bin/Debug/net10.0/ls8_oop.pdb
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/LS8/ls8_oop/obj/Debug/net10.0/ls8_oop.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/LS8/ls8_oop/obj/Debug/net10.0/ls8_oop.AssemblyInfoInputs.cache
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/LS8/ls8_oop/obj/Debug/net10.0/ls8_oop.AssemblyInfo.cs
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/LS8/ls8_oop/obj/Debug/net10.0/ls8_oop.csproj.CoreCompileInputs.cache
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/LS8/ls8_oop/obj/Debug/net10.0/ls8_oop.sourcelink.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/LS8/ls8_oop/obj/Debug/net10.0/ls8_oop.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/LS8/ls8_oop/obj/Debug/net10.0/refint/ls8_oop.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/LS8/ls8_oop/obj/Debug/net10.0/ls8_oop.pdb
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/LS8/ls8_oop/obj/Debug/net10.0/ls8_oop.genruntimeconfig.cache
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/LS8/ls8_oop/obj/Debug/net10.0/ref/ls8_oop.dll
