@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "WsJORlMtm0I=",
+  "success": true,
+  "projectFilePath": "/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/LS9/QuanLyNhanVien/QuanLyNhanVien.csproj",
+  "expectedPackageFiles": [
+    "/Users/anhnguyen/.nuget/packages/newtonsoft.json/13.0.4/newtonsoft.json.13.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}
