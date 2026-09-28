@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "U0Xm6K5cNWM=",
+  "success": true,
+  "projectFilePath": "/Users/anhnguyen/Documents/BC-DotNet/Dotnet/LS11/SOLID/SOLID.csproj",
+  "expectedPackageFiles": [
+    "/Users/anhnguyen/.nuget/packages/microsoft.extensions.dependencyinjection/10.0.12/microsoft.extensions.dependencyinjection.10.0.12.nupkg.sha512",
+    "/Users/anhnguyen/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/10.0.12/microsoft.extensions.dependencyinjection.abstractions.10.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}
