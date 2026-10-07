@@ -1,0 +1,41 @@
+@* localhost:xxx/login thi vao trang nay *@
+
+@page "/login"
+@* doi tieu de dung <PageTitle> </PageTitle> *@
+
+@* Moi trang co the co nhieu @page*@
+@page "/dang-nhap"
+
+<PageTitle>Login</PageTitle>
+
+@* code html *@
+<div class="container">
+    <div class="mb-3">
+        <label for="" class="form-label">@LabelEmail</label>
+        <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId"
+            placeholder="abc@mail.com" />
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label">@LabelPassword</label>
+        <input type="password" class="form-control" name="" id="" placeholder="" />
+    </div>
+
+    @*Event binding*@
+    <button class="btn btn-primary" @onclick="DoiChu">Submit</button> @* Call back function @onclick *@
+
+    @* goi razor component giong cach dung html khuyet*@
+    <Button/>
+
+</div>
+
+@code{
+    public string LabelEmail {get;set;} = "Email here";
+    public string LabelPassword {get;set;} = "Password";
+
+    public void DoiChu(){
+        LabelEmail = "Doi lable ne";
+        LabelPassword = "Doi label pass ne";
+    }
+    
+}
