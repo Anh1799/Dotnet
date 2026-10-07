@@ -9,15 +9,15 @@
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button> *@
 
 <div class="card col-5"/>
-    <img src="https://picsum.photos/200/300" width="100%" alt="" />
+     <img src="https://picsum.photos/200/300" height="300px" alt="">
     <div class="card-body">
         <h4 class="card-title">Justin</h4>
         <p class="card-text">20 years old</p>
     </div>
     <div class="card-footer">
-        <button class="btn btn-warning">Dislike</button>
-        20
-        <button class="btn btn-danger">Like</button>
+        <button class="btn btn-warning" @onmouseover="Giam">Dislike</button>
+        @count
+        <button class="btn btn-info" @onclick="Tang">Like</button>
     </div>
 
 @code {
@@ -27,4 +27,17 @@
     {
         currentCount++;
     } *@
+
+    int count = 20;
+    void Tang()
+    {
+        count++;
+    }
+
+    void Giam()
+    {
+        count--;
+    }
+
+
 }
