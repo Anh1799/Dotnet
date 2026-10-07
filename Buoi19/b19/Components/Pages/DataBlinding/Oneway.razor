@@ -1,0 +1,37 @@
+@page "/oneway"
+
+
+
+    <div class="container">
+    <h1>One way data binding</h1>
+
+    <div class="col-5 card text-start">
+        <img class="card-img-top" src=@product.Image alt="Title" />
+        <div class="card-body">
+            <h4 class="card-title">@product.Name</h4>
+            <p class="card-text">@product.Price </p>
+        </div>
+    </div>
+    @*  hiểnthij thành tiền cảu 20sp *@
+     <span class="alert alert-danger d-inline-block">
+       @ThanhTien().ToString(  "c");
+    </span>
+</div>
+
+
+@code{
+    class ProductModel
+    {
+        public string? Name {get;set;} = "Macbook NEO";
+        public decimal Price {get;set;} = 1000;
+        public string Image {get;set;} = "https://picsum.photos/200/300";
+    }
+
+    ProductModel product = new ProductModel();
+
+    decimal ThanhTien()
+    {
+        return product.Price * 20;
+    }
+
+}

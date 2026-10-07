@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "JYE9JIX6ulg=",
+  "dgSpecHash": "OJGTac/E1fk=",
   "success": true,
-  "projectFilePath": "/Users/anhnguyen/Documents/BC-DotNet/Dotnet/Buoi19/b19/b19.csproj",
+  "projectFilePath": "/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/Buoi19/b19/b19.csproj",
   "expectedPackageFiles": [
-    "/Users/anhnguyen/.nuget/packages/microsoft.aspnetcore.app.internal.assets/10.0.2/microsoft.aspnetcore.app.internal.assets.10.0.2.nupkg.sha512"
+    "/Users/anhnguyen/.nuget/packages/microsoft.aspnetcore.app.internal.assets/10.0.6/microsoft.aspnetcore.app.internal.assets.10.0.6.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/anhnguyen/Documents/BC-DotNet/Dotnet/Buoi19/b19/b19.csproj": {}
+    "/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/Buoi19/b19/b19.csproj": {}
   },
   "projects": {
-    "/Users/anhnguyen/Documents/BC-DotNet/Dotnet/Buoi19/b19/b19.csproj": {
+    "/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/Buoi19/b19/b19.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/anhnguyen/Documents/BC-DotNet/Dotnet/Buoi19/b19/b19.csproj",
+        "projectUniqueName": "/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/Buoi19/b19/b19.csproj",
         "projectName": "b19",
-        "projectPath": "/Users/anhnguyen/Documents/BC-DotNet/Dotnet/Buoi19/b19/b19.csproj",
+        "projectPath": "/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/Buoi19/b19/b19.csproj",
         "packagesPath": "/Users/anhnguyen/.nuget/packages/",
-        "outputPath": "/Users/anhnguyen/Documents/BC-DotNet/Dotnet/Buoi19/b19/obj/",
+        "outputPath": "/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/Buoi19/b19/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/anhnguyen/.nuget/NuGet/NuGet.Config"
@@ -38,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net10.0": {
@@ -47,7 +47,7 @@
             "Microsoft.AspNetCore.App.Internal.Assets": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[10.0.2, )",
+              "version": "[10.0.6, )",
               "autoReferenced": true
             }
           },
@@ -70,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.102/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.202/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
