@@ -42,8 +42,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9EYXNoYm9hcmQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/Buoi19/b19/Components/Pages/DataBlinding/Oneway.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9EYXRhQmxpbmRpbmcvT25ld2F5LnJhem9y
+[/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/Buoi19/b19/Components/Pages/DataBinding/BatTapXe.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9EYXRhQmluZGluZy9CYXRUYXBYZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/Buoi19/b19/Components/Pages/DataBinding/Oneway.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9EYXRhQmluZGluZy9PbmV3YXkucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/Buoi19/b19/Components/Pages/Error.razor]

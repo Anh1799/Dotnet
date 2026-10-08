@@ -1,0 +1,47 @@
+@page "/baitapxe"
+
+
+
+<div class="container">
+
+    <h1>Bai Tap Xe</h1>
+
+    <div class="row">
+        <div class="col-6">
+            <img width="100%" src="@($"CarBasic/products/{color}-car.jpg")"" alt="" />
+        </div>
+        <div class="col-6 flex justify-content-center aligin-items-center">
+            <button class="btn btn-outline-danger" @onclick='()=>DoiMau("red")'>
+                <img width="20px" src="CarBasic/icon-red.jpg" alt="" />Red</button>
+            <button class="btn btn-outline-secondary" @onclick='()=>DoiMau("silver")' >
+                <img width="20px" src="CarBasic/icon-silver.jpg" alt="" />Silver</button>
+            <button class="btn btn-outline-dark" @onclick='()=>DoiMau("black")'>
+                <img width="20px" src="CarBasic/icon-black.jpg" alt="" />Black</button>
+            <button class="btn btn-outline-info" @onclick='()=>DoiMau("steel")' >
+                <img width="20px" src="CarBasic/icon-steel.jpg" alt="" />Steel</button>
+            
+        </div>
+    </div>
+</div>
+
+@foreach(var Car car in ds){
+    <p>@car.Name</p>
+}
+
+@code{
+
+    public class Car
+    {
+        public string Name{get;set;}
+        public string Img{get;set;}
+        public string Icon{get;set;}
+    }
+
+    string color ="black";
+
+
+    void DoiMau(string mau)
+    {
+        color = mau;
+    }
+}
