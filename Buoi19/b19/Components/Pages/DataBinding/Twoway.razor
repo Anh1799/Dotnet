@@ -1,0 +1,14 @@
+@page "/twoway"
+@* 
+<PageTitle>TwoWay</PageTitle> *@
+
+<input type="text" placeholder="Input something" @bind=@content/>
+<br />
+@content
+
+
+@code{
+    public string content {get;set;} = "Hello World";
+}
+
+@*Two way la co che cho hep dong bo hoa du lieu giua cac giao dien*@
