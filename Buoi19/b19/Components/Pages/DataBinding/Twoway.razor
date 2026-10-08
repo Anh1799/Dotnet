@@ -2,13 +2,64 @@
 @* 
 <PageTitle>TwoWay</PageTitle> *@
 
-<input type="text" placeholder="Input something" @bind=@content/>
+@* <input type="text" placeholder="Input something" @bind="@content" class="form-control w-50"/>
 <br />
-@content
+@content *@
 
 
-@code{
-    public string content {get;set;} = "Hello World";
+<div class="Constainer">
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Register</h4>
+            <EditForm Model="@model">
+                <div class="mb-3">
+                    <label for="" class="form-label">Name</label>
+                    <input type="text" class="form-control" name="" id="" @bind="@model.Name" />
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Email</label>
+                    <input type="email" class="form-control" name="" id="" @bind="@model.Email" />
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">SDT</label>
+                    <input type="text" class="form-control" name="" id="" @bind="@model.Phone" />
+                </div>
+                <div class="form-group my-2">
+                    <label>Gender</label>
+                    <input id="Male" class="form-check-input" value="true" name="Gender" type="radio" checked />
+                    <label for="Male" class="form-check-label">Male</label>
+                    <input id="FeMale" class="form-check-input" value="false" name="Gender" type="radio" />
+                    <label for="FeMale" class="form-check-label">FeMale</label>
+                </div>
+
+
+    
+    
+            </EditForm>
+        </div>
+        <div class="col-6">
+            <h4>Thông tin vừa nhập</h4>
+            <p>UserName: @model.Name</p>
+            <p>Email: @model.Email</p>
+            <p>FullName: @model.Phone</p>
+            <p>Gender: @(model.Gender ? "Male" : "Female" )</p>
+        </div>
+    </div>
+</div>
+
+@code {
+    public string content { get; set; } = "Hello World";
+
+    class RegisterModel
+    {
+        public string? Email { get; set; }
+        public string Name { get; set; }
+        public string Phone { get; set; }
+        public bool Gender { get; set; }
+        public string Hobby { get; set; }
+    }
+
+    RegisterModel model = new RegisterModel();
 }
 
 @*Two way la co che cho hep dong bo hoa du lieu giua cac giao dien*@
