@@ -1,3 +1,3 @@
-public class BadBankAccount{
-    public decimal balance;
-}
+// public class BadBankAccount{
+//     public decimal balance;
+// }

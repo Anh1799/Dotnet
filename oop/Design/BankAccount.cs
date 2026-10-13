@@ -22,7 +22,7 @@ public class BankAccount{
             throw new ArgumentException("Withdraw amount must be positive");
         }
         if(amount > balance){
-            throw new InvalidCastException("Insufficient funds");
+            throw new InvalidOperationException("Insufficient funds");
         }
 
         this.balance -= amount;
