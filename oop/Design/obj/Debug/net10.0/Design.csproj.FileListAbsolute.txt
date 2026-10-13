@@ -1,0 +1,15 @@
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/oop/Design/obj/Debug/net10.0/Design.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/oop/Design/obj/Debug/net10.0/Design.AssemblyInfoInputs.cache
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/oop/Design/obj/Debug/net10.0/Design.AssemblyInfo.cs
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/oop/Design/obj/Debug/net10.0/Design.csproj.CoreCompileInputs.cache
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/oop/Design/obj/Debug/net10.0/Design.sourcelink.json
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/oop/Design/bin/Debug/net10.0/Design
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/oop/Design/bin/Debug/net10.0/Design.deps.json
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/oop/Design/bin/Debug/net10.0/Design.runtimeconfig.json
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/oop/Design/bin/Debug/net10.0/Design.dll
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/oop/Design/bin/Debug/net10.0/Design.pdb
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/oop/Design/obj/Debug/net10.0/Design.dll
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/oop/Design/obj/Debug/net10.0/refint/Design.dll
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/oop/Design/obj/Debug/net10.0/Design.pdb
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/oop/Design/obj/Debug/net10.0/Design.genruntimeconfig.cache
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/oop/Design/obj/Debug/net10.0/ref/Design.dll
