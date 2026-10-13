@@ -5,16 +5,16 @@ public class BankAccount{
         Deposit(balance);
     }
 
+    public decimal GetBalance(){
+        return balance;
+    }
+
     public void Deposit(decimal amount){
         if(amount <= 0){
             throw new ArgumentException("Deposti amount must be positive");
         }
 
         this.balance += amount;
-    }
-
-    public decimal GetBalance(){
-        return balance;
     }
 
     public void Withdraw(decimal amount){
