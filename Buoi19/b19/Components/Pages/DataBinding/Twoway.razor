@@ -26,11 +26,13 @@
                 </div>
                 <div class="form-group my-2">
                     <label>Gender</label>
-                    <input id="Male" class="form-check-input" value="true" name="Gender" type="radio" checked />
+                    <input id="Male" class="form-check-input" value="true" name="Gender" type="radio" checked @onchange="(e)=> changeGender(true)"/>
                     <label for="Male" class="form-check-label">Male</label>
-                    <input id="FeMale" class="form-check-input" value="false" name="Gender" type="radio" />
+                    <input id="FeMale" class="form-check-input" value="false" name="Gender" type="radio" @onchange="(e)=> changeGender(false)" />
                     <label for="FeMale" class="form-check-label">FeMale</label>
+
                 </div>
+
 
 
     
@@ -60,6 +62,11 @@
     }
 
     RegisterModel model = new RegisterModel();
+
+    public void changeGender(bool gender)
+    {
+        model.Gender = gender;
+    }
 }
 
 @*Two way la co che cho hep dong bo hoa du lieu giua cac giao dien*@
