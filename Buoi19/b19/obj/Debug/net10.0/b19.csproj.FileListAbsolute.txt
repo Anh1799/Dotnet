@@ -247,8 +247,6 @@
 /Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/Buoi19/b19/obj/Debug/net10.0/compressed/uc99clf3e2-{0}-63fj8s7r0e-63fj8s7r0e.gz
 /Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/Buoi19/b19/obj/Debug/net10.0/compressed/kmwfrb3o6c-{0}-0j3bgjxly4-0j3bgjxly4.gz
 /Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/Buoi19/b19/obj/Debug/net10.0/compressed/ewqioq5ygr-{0}-w97mql0d9w-w97mql0d9w.gz
-/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/Buoi19/b19/obj/Debug/net10.0/compressed/e1u9bbzzjz-{0}-qcnkhbt5lj-qcnkhbt5lj.gz
-/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/Buoi19/b19/obj/Debug/net10.0/compressed/rwv3imiyno-{0}-12rnbzdyyc-12rnbzdyyc.gz
 /Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/Buoi19/b19/obj/Debug/net10.0/compressed/7h53cx3fl7-{0}-ya95wucx8o-ya95wucx8o.gz
 /Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/Buoi19/b19/obj/Debug/net10.0/compressed/8025nqamwm-{0}-ya95wucx8o-ya95wucx8o.gz
 /Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/Buoi19/b19/obj/Debug/net10.0/staticwebassets.build.json
@@ -261,3 +259,5 @@
 /Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/Buoi19/b19/obj/Debug/net10.0/b19.pdb
 /Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/Buoi19/b19/obj/Debug/net10.0/b19.genruntimeconfig.cache
 /Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/Buoi19/b19/obj/Debug/net10.0/ref/b19.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/Buoi19/b19/obj/Debug/net10.0/compressed/e1u9bbzzjz-{0}-cd06xom9c5-cd06xom9c5.gz
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/Buoi19/b19/obj/Debug/net10.0/compressed/rwv3imiyno-{0}-vmftroxvhh-vmftroxvhh.gz

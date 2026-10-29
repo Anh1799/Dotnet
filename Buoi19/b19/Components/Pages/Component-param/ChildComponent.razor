@@ -1,0 +1,19 @@
+
+
+<p>Child component</p>
+@ChildContent
+
+@*  là 1 dạng param 
+
+- /{id} -> route param
+- ?key=value -> quẻy param
+- RenderFragment -> truyền nội dung vào component
+
+
+
+ *@
+
+ @code {
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+ }
