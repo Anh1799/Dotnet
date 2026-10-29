@@ -1,5 +1,5 @@
 @page "/twoway"
-
+@using System.ComponentModel.DataAnnotations
 <PageTitle>Two-way Binding</PageTitle>
 
 @* <input type="text" placeholder="Hay nhap noi dung" @bind="@content" class="from-control w-50" /> *@
@@ -8,23 +8,29 @@
     <div class="row">
         <div class="col-6">
             <h4>Register</h4>
-            <EditFrom Model="@model">
-                @* nhieu input dua cac input ve model / class
-                    dang ky nguoi dung : email, ten, sdt, so thich, gioi tinh*@
+            <EditForm Model="@model">
+                <DataAnnotationsValidator /> @* kích hoạt các thuộc tính validation đã khai báo trong model *@
+                @* GOM HẾT CÁC LỘI LẠI 1 CHỖ *@
+                <ValidationSummary class="text-danger" />
+                @* nhiều input đauw các input về model / class
+                đăng ký người dùng : email, tên sdt , sở thích , giới tính *@
                 <div class="mb-3">
                     <label for="" class="form-label">Name</label>
                     <input type="text" class="form-control" name="" id="" @bind="@model.Name" 
                     @bind:event="oninput" />
+                    @* hiển thị lỗi nếu có *@
+                    <ValidationMessage class="text-danger" For="@(() => model.Name)" />
                 </div>
                 <div class="mb-3">
                     <label for="" class="form-label">Email</label>
                     <input type="email" class="form-control" name="" id="" @bind="@model.Email" 
                     @bind:event="oninput" />
+                    <ValidationMessage class="text-danger" For="@(() => model.Email)" />
                 </div>
                 <div class="mb-3">
                     <label for="" class="form-label">SDT</label>
-                    <input type="email" class="form-control" name="" id="" @bind="@model.Phone" 
-                    @bind:event="oninput" />
+                    <input type="text" class="form-control" name="" id="" @bind="@model.Phone" />
+                    <ValidationMessage class="text-danger" For="@(() => model.Phone)" />
                 </div>
                 <div class="form-group my-2">
                     <lable>Gender</lable>
@@ -36,8 +42,35 @@
                     <label for="Feale" class="form-check-label">Female</label>
                 </div>
 
+                @* hobby *@
+                <p>Sở thích</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="1" id="" />
+                    <label class="form-check-label" for="">Swimmung</label>
+                    <br>
+                    <input class="form-check-input" type="checkbox" value="2" id="" />
+                    <label class="form-check-label" for="">Running</label>
+                    <br>
+                    <input class="form-check-input" type="checkbox" value="3" id="" />
+                    <label class="form-check-label" for="">Coding</label>
+                </div>
 
-            </EditFrom>
+                @* contry *@
+
+                <div class="mb-3">
+                    <label for="" class="form-label">Country</label>
+                    <select class="form-select form-select-lg" name="" id="">
+                        <option selected>Select one</option>
+                        <option value="">USA</option>
+                        <option value="">Canada</option>
+                        <option value="">VietNam</option>~~
+                    </select>
+                </div>
+
+                <button class="btn btn-primary" type="submit">Submit</button>
+
+
+            </EditForm>
 
         </div>
 
@@ -59,11 +92,20 @@
 
     class RegisterModel
     {
+        [EmailAddress(ErrorMessage = "Email không hợp lệ")]
+        [Required(ErrorMessage = "Email không được để trống")]
         public string Email { get; set; }
+
+        [Required(ErrorMessage = "Ten không được để trống")]
         public string Name { get; set; }
+
+        [MinLength(9, ErrorMessage = "Số điện thoại phải có ít nhất 9 số")]
+        [MaxLength(11, ErrorMessage = "Số điện thoại không được vượt quá 11 số")]
+        [RegularExpression(@"^0\d{9,10}$", ErrorMessage = "Số điện thoại không hợp lệ")]
         public string Phone { get; set; }
         public bool Gender { get; set; }
-        public string Hooby { get; set; }
+        public List<string> Hobby { get; set; } = new List<string>(); // check box chọn nhiều sở thích
+        public string Country { get; set; }
     }
 
     RegisterModel model = new RegisterModel();
