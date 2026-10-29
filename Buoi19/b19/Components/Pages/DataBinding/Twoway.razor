@@ -1,44 +1,46 @@
 @page "/twoway"
-@* 
-<PageTitle>TwoWay</PageTitle> *@
 
-@* <input type="text" placeholder="Input something" @bind="@content" class="form-control w-50"/>
-<br />
-@content *@
+<PageTitle>Two-way Binding</PageTitle>
 
+@* <input type="text" placeholder="Hay nhap noi dung" @bind="@content" class="from-control w-50" /> *@
 
-<div class="Constainer">
+<div class="container">
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-6">
             <h4>Register</h4>
-            <EditForm Model="@model">
+            <EditFrom Model="@model">
+                @* nhieu input dua cac input ve model / class
+                    dang ky nguoi dung : email, ten, sdt, so thich, gioi tinh*@
                 <div class="mb-3">
                     <label for="" class="form-label">Name</label>
-                    <input type="text" class="form-control" name="" id="" @bind="@model.Name" />
+                    <input type="text" class="form-control" name="" id="" @bind="@model.Name" 
+                    @bind:event="oninput" />
                 </div>
                 <div class="mb-3">
                     <label for="" class="form-label">Email</label>
-                    <input type="email" class="form-control" name="" id="" @bind="@model.Email" />
+                    <input type="email" class="form-control" name="" id="" @bind="@model.Email" 
+                    @bind:event="oninput" />
                 </div>
                 <div class="mb-3">
                     <label for="" class="form-label">SDT</label>
-                    <input type="text" class="form-control" name="" id="" @bind="@model.Phone" />
+                    <input type="email" class="form-control" name="" id="" @bind="@model.Phone" 
+                    @bind:event="oninput" />
                 </div>
                 <div class="form-group my-2">
-                    <label>Gender</label>
-                    <input id="Male" class="form-check-input" value="true" name="Gender" type="radio" checked @onchange="(e)=> changeGender(true)"/>
+                    <lable>Gender</lable>
+                    <input id="Male" class="form-check-input" value="true" name="Gender" type="radio" checked
+                    @onchange="(e)=> changeGender(true)"/>
                     <label for="Male" class="form-check-label">Male</label>
-                    <input id="FeMale" class="form-check-input" value="false" name="Gender" type="radio" @onchange="(e)=> changeGender(false)" />
-                    <label for="FeMale" class="form-check-label">FeMale</label>
-
+                    <input id="Female" class="form-check-input" value="false" name="Gender" type="radio"
+                    @onchange="(e)=> changeGender(false)"/>
+                    <label for="Feale" class="form-check-label">Female</label>
                 </div>
 
 
+            </EditFrom>
 
-    
-    
-            </EditForm>
         </div>
+
         <div class="col-6">
             <h4>Thông tin vừa nhập</h4>
             <p>UserName: @model.Name</p>
@@ -46,27 +48,29 @@
             <p>FullName: @model.Phone</p>
             <p>Gender: @(model.Gender ? "Male" : "Female" )</p>
         </div>
+
     </div>
 </div>
 
+
 @code {
-    public string content { get; set; } = "Hello World";
+    public string content { get; set; } = "Hellooooooo";
+
 
     class RegisterModel
     {
-        public string? Email { get; set; }
+        public string Email { get; set; }
         public string Name { get; set; }
         public string Phone { get; set; }
         public bool Gender { get; set; }
-        public string Hobby { get; set; }
+        public string Hooby { get; set; }
     }
 
     RegisterModel model = new RegisterModel();
 
-    public void changeGender(bool gender)
-    {
-        model.Gender = gender;
+    public void changeGender(bool value){
+        model.Gender = value;
     }
-}
 
-@*Two way la co che cho hep dong bo hoa du lieu giua cac giao dien*@
+
+}
