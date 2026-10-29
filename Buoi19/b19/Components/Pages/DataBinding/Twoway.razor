@@ -43,7 +43,7 @@
                 </div>
 
                 @* hobby *@
-                <p>Sở thích</p>
+                @* <p>Sở thích</p>
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="1" id="" />
                     <label class="form-check-label" for="">Swimmung</label>
@@ -53,11 +53,20 @@
                     <br>
                     <input class="form-check-input" type="checkbox" value="3" id="" />
                     <label class="form-check-label" for="">Coding</label>
-                </div>
+                </div> *@
+
+                @* Hobby *@
+                <p>Sở thích</p>
+                @foreach (string hobby in lsHobby){
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="@hobby" id="@hobby" 
+                        @onchange="(e)=> changeHobby(hobby, e.Value)"/>
+                        <label class="form-check-label" for="@hobby">@hobby</label>
+                    </div>
+                }
 
                 @* contry *@
-
-                <div class="mb-3">
+                @* <div class="mb-3">
                     <label for="" class="form-label">Country</label>
                     <select class="form-select form-select-lg" name="" id="">
                         <option selected>Select one</option>
@@ -65,7 +74,21 @@
                         <option value="">Canada</option>
                         <option value="">VietNam</option>~~
                     </select>
+                </div> *@
+
+
+                @*Country*@
+                <div class="mb-3">
+                    <label for="" class="form-label">Country</label>
+                    <select class="form-select form-select-lg" name="" id="" @bind="@model.Country">
+                        <option value="">Select one</option>
+                        @foreach (var country in lsCountry)
+                        {
+                            <option value="@country">@country</option>
+                        }
+                    </select>
                 </div>
+
 
                 <button class="btn btn-primary" type="submit">Submit</button>
 
@@ -80,6 +103,8 @@
             <p>Email: @model.Email</p>
             <p>FullName: @model.Phone</p>
             <p>Gender: @(model.Gender ? "Male" : "Female" )</p>
+            <p>Hobbies: @string.Join(", ", model.Hobby)</p>
+            <p>Country: @model.Country</p>
         </div>
 
     </div>
@@ -110,8 +135,23 @@
 
     RegisterModel model = new RegisterModel();
 
+    public List<string> lsHobby = new List<string>(){"Boi", "Da bong", "Cau long", "Chay bo"};
+
+    public List<string> lsCountry = new List<string>(){"USA", "Canada", "VietNam"};    
+
     public void changeGender(bool value){
         model.Gender = value;
+    }
+
+    public void changeHobby(string soThich, object isChecked){
+        // nếu isChecked = true thì thêm sở thích vào list 
+        if((bool)isChecked){
+            model.Hobby.Add(soThich);
+        }
+        else{
+            // nếu isChecked = false thì bỏ sở thích khỏi list
+            model.Hobby.Remove(soThich);
+        }
     }
 
 
