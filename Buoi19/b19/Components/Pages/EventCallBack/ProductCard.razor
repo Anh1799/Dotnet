@@ -1,0 +1,34 @@
+<div class="col-4">
+    <div class="card">
+        <img class="card-img-top" src="@sanPham.Image" alt="..." />
+        <div class="card-body">
+            <h5 class="card-title">@sanPham.Name</h5>
+            <p class="card-text">@sanPham.Description</p>
+            <p class="card-text">@sanPham.Price</p>
+            <button class="btn btn-primary" @onclick="AddToCart">
+                Add to Cart
+            </button>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public ProductCardVM sanPham { get; set; } = new ProductCardVM();
+     
+    [Parameter]
+    @* Func/ Action *@
+    @*  tham số dạng hàm có tên là ThemGioHang(ProductCardVM sp) *@
+    @* EventCallback : không phải delegate funtion bt , quản lý lifecycle bởi blazor
+    => để gọi phải dùng .InvokeAsync()
+
+
+
+    *@
+    public EventCallback<ProductCardVM> ThemGioHang { get; set; }
+        public async Task AddToCart(){
+            await ThemGioHang.InvokeAsync(sanPham);
+
+            Console.WriteLine("Da them san pham vao gio hang: " + sanPham.Name);
+        }
+}
