@@ -1,0 +1,25 @@
+<div class="card" style="width: 18rem;">
+    <img src="@Item.Img" class="card-img-top" alt="@Item.Name">
+    <div class="card-body">
+        <h5 class="card-title">@Item.Name</h5>
+        <p class="card-text">@Item.Price</p>
+        <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalId" @onclick="ShowDetail" >
+            Xem chi tiết
+        </button>
+    </div>
+</div>
+
+@code
+{
+    [Parameter]
+    public CarProductVM Item { get; set; } = new CarProductVM();
+
+    [Parameter]
+    public EventCallback<CarProductVM> XemChiTiet { get; set; }
+
+    public void ShowDetail()
+    {
+        // code để hiển thị modal
+        XemChiTiet.InvokeAsync(Item);
+    }
+}

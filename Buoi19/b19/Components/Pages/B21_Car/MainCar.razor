@@ -1,0 +1,37 @@
+@page "/car"
+
+
+<ExerciseCarStore>
+    <ModalCar Item="@Xe"/>
+
+    <ProductListCar>
+        @foreach (var item in lstCar)
+        {
+            <ProductItemCar Item="@item" XemChiTiet="@ShowDetail" />
+        }
+
+    </ProductListCar>
+
+
+</ExerciseCarStore>
+
+@code{
+    // ds xe
+    List<CarProductVM> lstCar = new List<CarProductVM>(){
+        
+        new CarProductVM{ Id = 1, Name = "black car", Img = "CarBasic/products/black-car.jpg", Price = 1000 },
+        new CarProductVM{ Id = 2, Name = "red car", Img = "CarBasic/products/red-car.jpg", Price = 2000 },
+        new CarProductVM{ Id = 3, Name = "silver car", Img = "CarBasic/products/silver-car.jpg", Price = 3000 },
+        new CarProductVM{ Id = 4, Name = "Steel car", Img = "CarBasic/products/steel-car.jpg", Price = 4000 }
+    };
+
+
+    CarProductVM Xe = new CarProductVM();
+
+    // 
+    public void ShowDetail(CarProductVM item)
+    {
+        Xe = item;
+        // code để hiển thị modal
+    }
+}
