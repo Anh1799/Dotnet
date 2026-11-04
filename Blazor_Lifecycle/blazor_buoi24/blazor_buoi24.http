@@ -1,0 +1,6 @@
+@blazor_buoi24_HostAddress = http://localhost:5026
+
+GET {{blazor_buoi24_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

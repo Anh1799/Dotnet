@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "tCO0lkqkh9g=",
+  "success": true,
+  "projectFilePath": "/Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/blazor_buoi24.csproj",
+  "expectedPackageFiles": [
+    "/Users/anhnguyen/.nuget/packages/microsoft.aspnetcore.app.internal.assets/10.0.2/microsoft.aspnetcore.app.internal.assets.10.0.2.nupkg.sha512",
+    "/Users/anhnguyen/.nuget/packages/microsoft.aspnetcore.openapi/10.0.1/microsoft.aspnetcore.openapi.10.0.1.nupkg.sha512",
+    "/Users/anhnguyen/.nuget/packages/microsoft.openapi/2.0.0/microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "Package 'Microsoft.OpenApi' 2.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-v5pm-xwqc-g5wc",
+      "projectPath": "/Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/blazor_buoi24.csproj",
+      "warningLevel": 1,
+      "filePath": "/Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/blazor_buoi24.csproj",
+      "libraryId": "Microsoft.OpenApi",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}
