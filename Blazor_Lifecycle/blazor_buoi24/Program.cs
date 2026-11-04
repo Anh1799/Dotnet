@@ -4,6 +4,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 
+builder.Services.AddHttpClient(); // thu vien dung de call api tu server khac
+
 // Truoc app la DI (tiem cac service vao ung dung)
 
 
