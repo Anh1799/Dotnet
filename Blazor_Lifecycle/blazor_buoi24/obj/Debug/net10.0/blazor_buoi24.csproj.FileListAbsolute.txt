@@ -1,5 +1,6 @@
 /Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/bin/Debug/net10.0/appsettings.Development.json
 /Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/bin/Debug/net10.0/appsettings.json
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/bin/Debug/net10.0/blazor_buoi24.staticwebassets.runtime.json
 /Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/bin/Debug/net10.0/blazor_buoi24.staticwebassets.endpoints.json
 /Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/bin/Debug/net10.0/blazor_buoi24
 /Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/bin/Debug/net10.0/blazor_buoi24.deps.json
@@ -8,6 +9,8 @@
 /Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/bin/Debug/net10.0/blazor_buoi24.pdb
 /Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/bin/Debug/net10.0/Microsoft.AspNetCore.OpenApi.dll
 /Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/bin/Debug/net10.0/Microsoft.OpenApi.dll
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/obj/Debug/net10.0/EmbeddedAttribute.cs
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/obj/Debug/net10.0/ValidatableTypeAttribute.cs
 /Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/obj/Debug/net10.0/blazor_buoi24.csproj.AssemblyReference.cache
 /Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/obj/Debug/net10.0/rpswa.dswa.cache.json
 /Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/obj/Debug/net10.0/blazor_buoi24.GeneratedMSBuildEditorConfig.editorconfig
@@ -16,11 +19,15 @@
 /Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/obj/Debug/net10.0/blazor_buoi24.csproj.CoreCompileInputs.cache
 /Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/obj/Debug/net10.0/blazor_buoi24.MvcApplicationPartsAssemblyInfo.cs
 /Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/obj/Debug/net10.0/blazor_buoi24.MvcApplicationPartsAssemblyInfo.cache
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/obj/Debug/net10.0/blazor_buoi24.RazorAssemblyInfo.cache
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/obj/Debug/net10.0/blazor_buoi24.RazorAssemblyInfo.cs
 /Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/obj/Debug/net10.0/blazor_buoi24.sourcelink.json
 /Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/obj/Debug/net10.0/rjimswa.dswa.cache.json
 /Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/obj/Debug/net10.0/rjsmrazor.dswa.cache.json
 /Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/obj/Debug/net10.0/rjsmcshtml.dswa.cache.json
 /Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/obj/Debug/net10.0/scopedcss/bundle/blazor_buoi24.styles.css
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/obj/Debug/net10.0/compressed/ufhh9c25ry-{0}-2i0r6wwb69-2i0r6wwb69.gz
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/obj/Debug/net10.0/compressed/a8bnawh3hw-{0}-iz83ucvm53-iz83ucvm53.gz
 /Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/obj/Debug/net10.0/staticwebassets.build.json
 /Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/obj/Debug/net10.0/staticwebassets.build.json.cache
 /Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/obj/Debug/net10.0/staticwebassets.development.json
@@ -32,10 +39,3 @@
 /Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/obj/Debug/net10.0/blazor_buoi24.pdb
 /Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/obj/Debug/net10.0/blazor_buoi24.genruntimeconfig.cache
 /Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/obj/Debug/net10.0/ref/blazor_buoi24.dll
-/Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/obj/Debug/net10.0/blazor_buoi24.RazorAssemblyInfo.cache
-/Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/obj/Debug/net10.0/blazor_buoi24.RazorAssemblyInfo.cs
-/Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/bin/Debug/net10.0/blazor_buoi24.staticwebassets.runtime.json
-/Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/obj/Debug/net10.0/EmbeddedAttribute.cs
-/Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/obj/Debug/net10.0/ValidatableTypeAttribute.cs
-/Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/obj/Debug/net10.0/compressed/ufhh9c25ry-{0}-2i0r6wwb69-2i0r6wwb69.gz
-/Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/obj/Debug/net10.0/compressed/a8bnawh3hw-{0}-iz83ucvm53-iz83ucvm53.gz

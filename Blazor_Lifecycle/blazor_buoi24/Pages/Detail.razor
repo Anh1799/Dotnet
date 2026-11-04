@@ -1,0 +1,33 @@
+@page "/detail/{id}"
+
+@*Dùng để call api*@
+@inject HttpClient _httpClient
+
+
+<div class="container">
+    <h3>Detail</h3>
+    <p>Ma san pham: @id</p>
+    <img src="@prodDetail.Image" alt="@prodDetail.Alias" />
+</div>
+
+@code{
+
+    [Parameter]
+    public string id {get;set;} = "0"; 
+
+     ProductDetailViewModel prodDetail = new ProductDetailViewModel();
+
+    protected override async Task OnInitializedAsync()
+    {
+        //Khi trang vừa load xong thì gọi api để lấy dữ liệu từ server map vào prodDetail
+
+        var response = await _httpClient.GetFromJsonAsync<ResponseType<ProductDetailViewModel>>(@$"https://apistore.cybersoft.edu.vn/api/Product/getbyid?id={id}");
+
+        //Sau khi lấy dữ liệu từ api về gán vào prodDetail để binding lên giao diện
+        prodDetail = response.content;    
+
+    }    
+
+
+}
+
