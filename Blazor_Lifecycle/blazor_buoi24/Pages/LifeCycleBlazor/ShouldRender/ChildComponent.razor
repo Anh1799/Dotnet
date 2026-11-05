@@ -1,0 +1,61 @@
+<div class="card border-primary">
+    <div class="card-header bg-light">
+        <h5 class="text-primary mb-0">Dynamic Notification List</h5>
+    </div>
+    <div class="card-body">
+        <div class="list-group list-group-flush">
+            @foreach (var item in listNotify)
+            {
+                <p>@item</p>
+            }
+        </div>
+    </div>
+</div>
+
+<h3>
+
+</h3>
+
+@code {
+
+    [Parameter]
+    public List<string> listNotify { get; set; }
+
+    private List<string> previousNotification = new List<string>();
+
+    protected override async Task OnInitializedAsync()
+    {
+
+
+    }
+
+    protected override bool ShouldRender()
+    {
+        // So sanh list lan truoc va lan sau co thay doi hay khong neu khong thay thi return true -> component phai render lai
+        // Neu khong thay doi return false -> component khong render lai
+
+        if (!Enumerable.SequenceEqual(listNotify, previousNotification))
+        {
+            previousNotification = new List<string>(listNotify);
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+
+
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        Console.WriteLine("render child ");
+        if (firstRender)
+        {
+            Console.WriteLine("first render");
+        }
+    }
+
+
+
+}

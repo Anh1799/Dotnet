@@ -14,7 +14,10 @@ var app = builder.Build();
 
 // Su dung cac ham tu service
 
-app.MapBlazorHub(); // kich hoat server socket cua blazor web
+app.UseRouting();
+app.MapBlazorHub(); //kích hoạt server socket của blazor web
 app.MapFallbackToPage("/_Host");
+
+app.UseStaticFiles(); // middleware để sử dụng file tĩnh như css, js, img
 
 app.Run();
