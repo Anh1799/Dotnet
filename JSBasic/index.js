@@ -68,4 +68,40 @@ let getAllProductApi = async () => {
   console.log(data);
 }
 
-getAllProductApi();
+// getAllProductApi();
+
+
+/*
+ localstorage: Luu duoc 5mb tai client va luu dang key value
+ .getItem('key'): lay ra du lieu value tu localstorage dua vao key
+ .setItem('key'): gan gai tri vao localstorage dua vao key
+ .removeItem('key'): xoa gia tri localstorage dua vao key
+
+
+*/
+
+
+window.setLocalstorage = () => {
+  localStorage.setItem("data", "data 123");
+
+  let prod = {
+    id:1,
+    name:'Iphone',
+    price: 1000
+  }
+
+  // primitive value: string, boolean, number
+  localStorage.setItem('data object', JSON.stringify(prod));
+
+
+  /* 
+  
+    json -> string : JSON.stringify <=> JsonSerializer.Serialize()
+    string -> json : JSON.parse <=> JsonSerializer.Dererialize<T>
+  
+  
+  */
+
+
+
+}
