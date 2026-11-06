@@ -92,7 +92,7 @@ window.setLocalstorage = () => {
 
   // primitive value: string, boolean, number
   localStorage.setItem('data object', JSON.stringify(prod));
-
+}
 
   /* 
   
@@ -102,6 +102,27 @@ window.setLocalstorage = () => {
   
   */
 
+    window.getStorage = () => {
+      let sData = localStorage.getItem('data');
+      console.log(sData)
+
+      // Lay json data
+      let sJSON = localStorage.getItem('data object');
+        console.log(sJSON);
+
+        let json = JSON.parse(sJSON);
+        console.log(json)
 
 
-}
+        console.log(json.id);
+        console.log(json.name);
+        console.log(json.price);
+    }
+
+    window.removeStorage = () => {
+      localStorage.removeItem('data');
+    }
+
+
+
+
