@@ -30,6 +30,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29udGFjdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/Pages/DemoJSRuntime.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGVtb0pTUnVudGltZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/Pages/Detail.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGV0YWlsLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
