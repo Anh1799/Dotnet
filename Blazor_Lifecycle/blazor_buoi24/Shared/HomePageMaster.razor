@@ -1,3 +1,7 @@
+@inject CartService _cartService
+@implements IDisposable
+
+
 @inherits LayoutComponentBase
 
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark text-white" style="
@@ -41,6 +45,17 @@
             </li>
             
         </ul>
+
+        <form class="d-flex my-2 my-lg-0">
+            <a href="/bt-giohang" class="btn btn-dark">
+                @{
+                    int soLuong = _cartService.lstProd.Sum(item => item.quantity);
+                    string tongTien = _cartService.lstProd.Sum(item => item.quantity * item.price).ToString("N0");
+                }
+
+                <i class="fa fa-cart-plus"></i> ( @soLuong - @tongTien $)
+            </a>
+        </form>
         
     </div>
 </nav>
@@ -49,3 +64,17 @@
 <div class="content">
     @Body
 </div>
+
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        _cartService.OnChange += StateHasChanged;
+    }
+
+    public void Dispose()
+    {
+        _cartService.OnChange -= StateHasChanged;
+
+    }
+}

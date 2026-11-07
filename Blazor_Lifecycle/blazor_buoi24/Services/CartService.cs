@@ -21,10 +21,29 @@ public class CartService{
         else{
             lstProd.Add(itemClick);
         }
-        
+
         //Cập nhật lại giao diện 
         await StateHasChange();
 
+    }
+
+    public async Task RemoveItem(int id){
+        ProductCartViewModel? itemCart = lstProd.SingleOrDefault(item => item.Id == id);
+        if (itemCart != null){
+            lstProd.Remove(itemCart);
+        }
+        await StateHasChange();   
+    }
+
+    public async Task ChangeQuantity(int idClick, int quantity){
+        ProductCartViewModel? itemCart = lstProd.SingleOrDefault(item => item.Id == idClick);
+        if (itemCart != null){
+            itemCart.quantity += quantity;
+            if (itemCart.quantity == 0){
+                itemCart.quantity += 1; 
+            }
+        }
+        await StateHasChange();
     }
 
 
