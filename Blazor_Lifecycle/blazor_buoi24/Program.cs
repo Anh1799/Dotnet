@@ -18,7 +18,7 @@ builder.Services.AddSignalR(); //service socket của dotnet
 //DI các service management
 builder.Services.AddScoped<NumberService>();
 builder.Services.AddScoped<CarService>();
-
+builder.Services.AddScoped<CartService>();
 
 
 var app = builder.Build();
