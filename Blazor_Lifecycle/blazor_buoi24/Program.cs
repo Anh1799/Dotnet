@@ -1,12 +1,24 @@
+using blazor_buoi24.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// setup server blazor
+//setup server blazor
 builder.Services.AddRazorPages();
-builder.Services.AddServerSideBlazor();
+builder.Services.AddServerSideBlazor(); 
 
-builder.Services.AddHttpClient(); // thu vien dung de call api tu server khac
+builder.Services.AddHttpClient(); //Thư viện dùng để call api từ server khác
 
-// Truoc app la DI (tiem cac service vao ung dung)
+//Trước app là DI (tiêm các service vào ứng dụng)
+//Sử dụng các hàm từ service
+builder.Services.AddSignalR(); //service socket của dotnet
+
+
+
+
+//DI các service management
+builder.Services.AddScoped<NumberService>();
+builder.Services.AddScoped<CarService>();
+
 
 
 var app = builder.Build();

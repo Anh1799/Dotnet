@@ -1,0 +1,64 @@
+@page "/state-management"
+
+@inject NumberService _numService
+
+@implements IDisposable
+
+<div class="container">
+    <h3>State management</h3>
+
+    <h3 class="alert alert-warning">
+        Tang giam so luong
+    </h3>
+
+    <button class="btn btn-dark me-2" @onclick="@((e) => handleChangeNumber(1))">+</button>
+    <h3 class="d-inline-block">@_numService.number</h3>
+    <button class="btn btn-dark ms-2" @onclick="@((e) => handleChangeNumber(-1))">-</button>
+
+    <hr />
+
+    <h3 class="alert alert-warning">Change car color</h3>
+    <div class="row">
+        <div class="col-4">
+            
+            <img class="w-100" src="/img/red-car.jpg" alt="...." />
+        </div>
+        <div class="col-md-8">
+            <button class="btn btn-dark">Black car</button>
+            <button class="btn btn-dark">Red car</button>
+            <button class="btn btn-dark">Silver car</button>
+
+
+        </div>
+    </div>
+
+
+
+</div>
+
+
+@code{
+    @* public int number {get;set;} = 1; *@
+
+
+    public async Task handleChangeNumber(int quantity){
+        await _numService.changeNumber(quantity);
+    }
+
+    public async Task handleChangeColor(string color){
+        Console.Write(color);
+        await _carService.ChangeColor(color);
+    }
+    protected override async Task OnInitializedAsync(){
+        //Cài đặt event onchange trên lifecycle init
+        _numService.OnChange += StateHasChanged;
+        _carService.OnChange += StateHasChanged;
+    }
+
+    public void Dispose()
+    {
+        //Huỷ theo dõi sự kiện onchange của service
+        _numService.OnChange -= StateHasChanged;
+        _carService.OnChange -= StateHasChanged;
+    }
+}
