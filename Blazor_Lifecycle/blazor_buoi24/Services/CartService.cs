@@ -1,25 +1,30 @@
 
 
-public class CartService{
-    public List<ProductCartViewModel> lstProd {get;set;} = new List<ProductCartViewModel>(){
-            new ProductCartViewModel
-            {
-                Id = 2,
-                image = "https://dummyimage.com/300x300/000/fff&text=Samsung+S24",
-                name = "Samsung Galaxy S24",
-                price = 1499,
-                quantity = 1
-            }
-    };
+public class CartService
+{
+    public List<ProductCartViewModel> lstProd { get; set; } = new List<ProductCartViewModel>();
 
-    public async Task AddItem(ProductCartViewModel itemClick){
+    public async Task AddItem(ProductCartViewModel itemClick)
+    {
         //Kiểm tra giỏ hàng có item đó chưa nếu có thì tăng số lượng nếu chưa có thì thêm vào lstProd
         ProductCartViewModel itemCart = lstProd.SingleOrDefault(item => item.Id == itemClick.Id);
-        if (itemCart != null){
+        if (itemCart != null)
+        {
             itemCart.quantity += 1;
         }
-        else{
-            lstProd.Add(itemClick);
+        else
+        {
+
+            // Tao moi san pham click
+            ProductCartViewModel newProduct = new ProductCartViewModel(){
+                Id = itemClick.Id,
+                name = itemClick.name,
+                price = itemClick.price,
+                image = itemClick.image,
+                quantity = 1,
+            }; 
+
+            lstProd.Add(newProduct);
         }
 
         //Cập nhật lại giao diện 
@@ -27,20 +32,25 @@ public class CartService{
 
     }
 
-    public async Task RemoveItem(int id){
+    public async Task RemoveItem(int id)
+    {
         ProductCartViewModel? itemCart = lstProd.SingleOrDefault(item => item.Id == id);
-        if (itemCart != null){
+        if (itemCart != null)
+        {
             lstProd.Remove(itemCart);
         }
-        await StateHasChange();   
+        await StateHasChange();
     }
 
-    public async Task ChangeQuantity(int idClick, int quantity){
+    public async Task ChangeQuantity(int idClick, int quantity)
+    {
         ProductCartViewModel? itemCart = lstProd.SingleOrDefault(item => item.Id == idClick);
-        if (itemCart != null){
+        if (itemCart != null)
+        {
             itemCart.quantity += quantity;
-            if (itemCart.quantity == 0){
-                itemCart.quantity += 1; 
+            if (itemCart.quantity == 0)
+            {
+                itemCart.quantity += 1;
             }
         }
         await StateHasChange();
@@ -49,7 +59,8 @@ public class CartService{
 
     public event Action OnChange;
 
-    public async Task StateHasChange(){
+    public async Task StateHasChange()
+    {
         OnChange?.Invoke();
     }
 }
