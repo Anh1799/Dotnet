@@ -5,7 +5,7 @@ public class CarService{
 
     public event Action OnChange;
 
-    public async Task changeColor(string colorParam){
+    public async Task ChangeColor(string colorParam){
         color = colorParam;
         await StateHasChange();
     }
