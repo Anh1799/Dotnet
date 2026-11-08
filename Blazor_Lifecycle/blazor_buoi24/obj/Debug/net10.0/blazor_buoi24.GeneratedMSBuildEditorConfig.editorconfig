@@ -30,6 +30,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29udGFjdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/Pages/CRUDStore/CreateStore.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ1JVRFN0b3JlL0NyZWF0ZVN0b3JlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/Pages/CRUDStore/CRUDStore.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ1JVRFN0b3JlL0NSVURTdG9yZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/Pages/CRUDStore/StoreDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ1JVRFN0b3JlL1N0b3JlRGV0YWlsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/Pages/DemoJSRuntime.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGVtb0pTUnVudGltZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -56,6 +68,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/Pages/Register.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVnaXN0ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/Pages/StateManagement/BTBurger/BTBurger.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3RhdGVNYW5hZ2VtZW50L0JUQnVyZ2VyL0JUQnVyZ2VyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/anhnguyen/Documents/BC-DotNet/Dotnet/Blazor_Lifecycle/blazor_buoi24/Pages/StateManagement/BTGioHang/BTGioHang.razor]
