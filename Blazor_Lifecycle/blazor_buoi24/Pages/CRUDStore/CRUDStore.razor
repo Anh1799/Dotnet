@@ -7,11 +7,11 @@
 
 <div class="container">
     <h3>Quản lý store</h3>
-    
+
     <div class="card shadow-sm border-0">
-     
+
         <div class="card-header bg-dark text-white">
-            
+
             <div class="row align-items-center g-3">
                 <div class="col-md-6">
                     <h4 class="mb-0">Danh sách cửa hàng</h4>
@@ -21,7 +21,7 @@
                     <form action="" method="get">
                         <div class="input-group">
                             <input type="text" name="keyword" class="form-control"
-                                   placeholder="Tìm kiếm cửa hàng theo tên..." />
+                                placeholder="Tìm kiếm cửa hàng theo tên..." />
                             <button class="btn btn-primary" type="submit">
                                 <i class="bi bi-search"></i>
                                 Tìm kiếm
@@ -31,11 +31,11 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="card-body">
-               <a href="/create-store" class="btn btn-primary my-2">
-        Create store
-    </a>
+            <a href="/create-store" class="btn btn-primary my-2">
+                Create store
+            </a>
             <div class="table-responsive">
                 <table class="table table-hover table-bordered align-middle mb-0">
                     <thead class="table-dark text-center">
@@ -45,7 +45,7 @@
                             <th>Tên cửa hàng</th>
                             <th>Alias</th>
                             @* <th>Latitude</th>
-                <th>Longtitude</th> *@
+                                <th>Longtitude</th> *@
                             <th>Mô tả</th>
                             <th>
 
@@ -58,18 +58,18 @@
                         {
                             <tr>
 
-             
+
                                 <td class="text-center">@item.Id</td>
 
                                 <td class="text-center">
                                     <img src="@item.Image" alt="Nguyên Sneaker" class="img-thumbnail"
-                                         style="width: 90px; height: 60px; object-fit: cover;" />
+                                    style="width: 90px; height: 60px; object-fit: cover;" />
                                 </td>
 
                                 <td class="fw-semibold">@item.Name</td>
                                 <td>@item.Alias</td>
                                 @* <td>@item.Latitude</td>
-                <td>@item.Longtitude</td> *@
+                                    <td>@item.Longtitude</td> *@
                                 <td>
                                     @if (item.Description.Length > 30)
                                     {
@@ -80,22 +80,23 @@
                                         <p>@item.Description</p>
                                     }
 
-                    
+
                                 </td>
 
-            
+
                                 <td style="width:150px">
                                     <a href="/store-detail/@item.Id" class="btn btn-primary mx-2">
                                         <i class="fa fa-edit"></i>
                                     </a>
-                                    <button @onclick="@( async e => await _storeService.DeleteStore(item.Id) )" class="btn btn-danger">
+                                    <button @onclick="@( async e => await _storeService.DeleteStore(item.Id) )"
+                                    class="btn btn-danger">
                                         <i class="fa fa-trash"></i>
                                     </button>
                                 </td>
                             </tr>
                         }
 
-              
+
                     </tbody>
                 </table>
             </div>

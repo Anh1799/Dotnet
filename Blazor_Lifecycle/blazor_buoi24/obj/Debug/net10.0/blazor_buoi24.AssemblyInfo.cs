@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("blazor_buoi24")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2af3dc88edd69783436cb69fac89e8ea5aa79964")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3be7fee3d7980e32ba5ddee725fe0d5912e69b45")]
 [assembly: System.Reflection.AssemblyProductAttribute("blazor_buoi24")]
 [assembly: System.Reflection.AssemblyTitleAttribute("blazor_buoi24")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

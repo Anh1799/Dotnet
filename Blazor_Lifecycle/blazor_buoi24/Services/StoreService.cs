@@ -5,6 +5,7 @@ public class StoreService
 {
     //state này là list các store của trang getAll
     public List<StoreViewModel> lstStore = new List<StoreViewModel>();
+    
     //state này của trang edit store
     public StoreViewModel storeDetail = new StoreViewModel();
 

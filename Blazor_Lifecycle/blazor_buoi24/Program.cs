@@ -1,5 +1,9 @@
 using blazor_buoi24.Services;
 
+using System.Security.Claims;
+using System.Text;
+using Microsoft.AspNetCore.Components.Authorization;
+
 var builder = WebApplication.CreateBuilder(args);
 
 //setup server blazor
@@ -21,6 +25,7 @@ builder.Services.AddScoped<CarService>();
 builder.Services.AddScoped<CartService>();
 builder.Services.AddScoped<BurgerService>();
 builder.Services.AddScoped<StoreService>();
+builder.Services.AddScoped<RoomService>();
 
 
 var app = builder.Build();
