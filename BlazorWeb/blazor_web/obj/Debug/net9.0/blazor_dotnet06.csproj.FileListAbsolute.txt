@@ -1,0 +1,168 @@
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/bin/Debug/net9.0/appsettings.Development.json
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/bin/Debug/net9.0/appsettings.json
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/bin/Debug/net9.0/blazor_dotnet06.staticwebassets.runtime.json
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/bin/Debug/net9.0/blazor_dotnet06.staticwebassets.endpoints.json
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/bin/Debug/net9.0/blazor_dotnet06
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/bin/Debug/net9.0/blazor_dotnet06.deps.json
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/bin/Debug/net9.0/blazor_dotnet06.runtimeconfig.json
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/bin/Debug/net9.0/blazor_dotnet06.dll
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/bin/Debug/net9.0/blazor_dotnet06.pdb
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/bin/Debug/net9.0/Microsoft.AspNetCore.Http.Connections.Client.dll
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/bin/Debug/net9.0/Microsoft.AspNetCore.OpenApi.dll
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/bin/Debug/net9.0/Microsoft.AspNetCore.SignalR.Client.dll
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/bin/Debug/net9.0/Microsoft.AspNetCore.SignalR.Client.Core.dll
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/bin/Debug/net9.0/Microsoft.OpenApi.dll
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/bin/Debug/net9.0/System.Net.ServerSentEvents.dll
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/obj/Debug/net9.0/blazor_dotnet06.csproj.AssemblyReference.cache
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/obj/Debug/net9.0/rpswa.dswa.cache.json
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/obj/Debug/net9.0/blazor_dotnet06.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/obj/Debug/net9.0/blazor_dotnet06.AssemblyInfoInputs.cache
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/obj/Debug/net9.0/blazor_dotnet06.AssemblyInfo.cs
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/obj/Debug/net9.0/blazor_dotnet06.csproj.CoreCompileInputs.cache
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/obj/Debug/net9.0/blazor_dotnet06.MvcApplicationPartsAssemblyInfo.cs
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/obj/Debug/net9.0/blazor_dotnet06.MvcApplicationPartsAssemblyInfo.cache
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/obj/Debug/net9.0/blazor_dotnet06.RazorAssemblyInfo.cache
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/obj/Debug/net9.0/blazor_dotnet06.RazorAssemblyInfo.cs
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/obj/Debug/net9.0/blazor_dotnet06.sourcelink.json
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/obj/Debug/net9.0/rjimswa.dswa.cache.json
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/obj/Debug/net9.0/rjsmrazor.dswa.cache.json
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/obj/Debug/net9.0/scopedcss/bundle/blazor_dotnet06.styles.css
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/obj/Debug/net9.0/compressed/u3bnnfwjki-{0}-r3k5pmcmhl-r3k5pmcmhl.gz
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/obj/Debug/net9.0/compressed/pebpp67aiu-{0}-h0dr7gao6k-h0dr7gao6k.gz
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/obj/Debug/net9.0/staticwebassets.build.json
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/obj/Debug/net9.0/staticwebassets.build.json.cache
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/obj/Debug/net9.0/staticwebassets.development.json
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/obj/Debug/net9.0/staticwebassets.build.endpoints.json
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/obj/Debug/net9.0/swae.build.ex.cache
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/obj/Debug/net9.0/blazor_d.C5AA5DCB.Up2Date
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/obj/Debug/net9.0/blazor_dotnet06.dll
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/obj/Debug/net9.0/refint/blazor_dotnet06.dll
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/obj/Debug/net9.0/blazor_dotnet06.pdb
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/obj/Debug/net9.0/blazor_dotnet06.genruntimeconfig.cache
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/obj/Debug/net9.0/ref/blazor_dotnet06.dll
+/Volumes/Cybersoft/dotnet06/web_blazor/blazor_dotnet06/bin/Debug/net9.0/Blazored.LocalStorage.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/bin/Debug/net9.0/appsettings.Development.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/bin/Debug/net9.0/appsettings.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/bin/Debug/net9.0/publish/web.config
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/bin/Debug/net9.0/publish/appsettings.Development.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/bin/Debug/net9.0/publish/appsettings.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/bin/Debug/net9.0/publish/blazor_dotnet06.deps.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/bin/Debug/net9.0/publish/blazor_dotnet06.runtimeconfig.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/bin/Debug/net9.0/publish/blazor_dotnet06.staticwebassets.endpoints.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/bin/Debug/net9.0/blazor_dotnet06.staticwebassets.runtime.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/bin/Debug/net9.0/blazor_dotnet06.staticwebassets.endpoints.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/bin/Debug/net9.0/blazor_dotnet06
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/bin/Debug/net9.0/blazor_dotnet06.deps.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/bin/Debug/net9.0/blazor_dotnet06.runtimeconfig.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/bin/Debug/net9.0/blazor_dotnet06.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/bin/Debug/net9.0/blazor_dotnet06.pdb
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/bin/Debug/net9.0/Blazored.LocalStorage.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/bin/Debug/net9.0/Microsoft.AspNetCore.Http.Connections.Client.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/bin/Debug/net9.0/Microsoft.AspNetCore.OpenApi.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/bin/Debug/net9.0/Microsoft.AspNetCore.SignalR.Client.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/bin/Debug/net9.0/Microsoft.AspNetCore.SignalR.Client.Core.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/bin/Debug/net9.0/Microsoft.OpenApi.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/bin/Debug/net9.0/System.Net.ServerSentEvents.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/obj/Debug/net9.0/blazor_dotnet06.csproj.AssemblyReference.cache
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/obj/Debug/net9.0/rpswa.dswa.cache.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/obj/Debug/net9.0/blazor_dotnet06.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/obj/Debug/net9.0/blazor_dotnet06.AssemblyInfoInputs.cache
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/obj/Debug/net9.0/blazor_dotnet06.AssemblyInfo.cs
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/obj/Debug/net9.0/blazor_dotnet06.csproj.CoreCompileInputs.cache
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/obj/Debug/net9.0/blazor_dotnet06.MvcApplicationPartsAssemblyInfo.cs
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/obj/Debug/net9.0/blazor_dotnet06.MvcApplicationPartsAssemblyInfo.cache
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/obj/Debug/net9.0/blazor_dotnet06.RazorAssemblyInfo.cache
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/obj/Debug/net9.0/blazor_dotnet06.RazorAssemblyInfo.cs
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/obj/Debug/net9.0/blazor_dotnet06.sourcelink.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/obj/Debug/net9.0/rjimswa.dswa.cache.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/obj/Debug/net9.0/rjsmrazor.dswa.cache.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/obj/Debug/net9.0/scopedcss/bundle/blazor_dotnet06.styles.css
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/obj/Debug/net9.0/compressed/u3bnnfwjki-{0}-r3k5pmcmhl-r3k5pmcmhl.gz
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/obj/Debug/net9.0/compressed/pebpp67aiu-{0}-h0dr7gao6k-h0dr7gao6k.gz
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/obj/Debug/net9.0/staticwebassets.build.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/obj/Debug/net9.0/staticwebassets.build.json.cache
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/obj/Debug/net9.0/staticwebassets.development.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/obj/Debug/net9.0/staticwebassets.build.endpoints.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/obj/Debug/net9.0/swae.build.ex.cache
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/obj/Debug/net9.0/blazor_d.C5AA5DCB.Up2Date
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/obj/Debug/net9.0/blazor_dotnet06.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/obj/Debug/net9.0/refint/blazor_dotnet06.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/obj/Debug/net9.0/blazor_dotnet06.pdb
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/obj/Debug/net9.0/blazor_dotnet06.genruntimeconfig.cache
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/blazor_web/obj/Debug/net9.0/ref/blazor_dotnet06.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/bin/Debug/net9.0/publish/web.config
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/bin/Debug/net9.0/appsettings.Development.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/bin/Debug/net9.0/appsettings.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/bin/Debug/net9.0/publish/appsettings.Development.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/bin/Debug/net9.0/publish/appsettings.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/bin/Debug/net9.0/publish/blazor_dotnet06.deps.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/bin/Debug/net9.0/publish/blazor_dotnet06.runtimeconfig.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/bin/Debug/net9.0/publish/blazor_dotnet06.staticwebassets.endpoints.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/bin/Debug/net9.0/blazor_dotnet06.staticwebassets.endpoints.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/bin/Debug/net9.0/blazor_dotnet06.staticwebassets.runtime.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/bin/Debug/net9.0/blazor_dotnet06
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/bin/Debug/net9.0/blazor_dotnet06.deps.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/bin/Debug/net9.0/blazor_dotnet06.runtimeconfig.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/bin/Debug/net9.0/blazor_dotnet06.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/bin/Debug/net9.0/blazor_dotnet06.pdb
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/bin/Debug/net9.0/Blazored.LocalStorage.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/bin/Debug/net9.0/Microsoft.AspNetCore.Http.Connections.Client.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/bin/Debug/net9.0/Microsoft.AspNetCore.OpenApi.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/bin/Debug/net9.0/Microsoft.AspNetCore.SignalR.Client.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/bin/Debug/net9.0/Microsoft.AspNetCore.SignalR.Client.Core.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/bin/Debug/net9.0/Microsoft.OpenApi.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/bin/Debug/net9.0/System.Net.ServerSentEvents.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/obj/Debug/net9.0/blazor_dotnet06.csproj.AssemblyReference.cache
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/obj/Debug/net9.0/rpswa.dswa.cache.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/obj/Debug/net9.0/blazor_dotnet06.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/obj/Debug/net9.0/blazor_dotnet06.AssemblyInfoInputs.cache
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/obj/Debug/net9.0/blazor_dotnet06.AssemblyInfo.cs
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/obj/Debug/net9.0/blazor_dotnet06.csproj.CoreCompileInputs.cache
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/obj/Debug/net9.0/blazor_dotnet06.MvcApplicationPartsAssemblyInfo.cs
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/obj/Debug/net9.0/blazor_dotnet06.MvcApplicationPartsAssemblyInfo.cache
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/obj/Debug/net9.0/blazor_dotnet06.RazorAssemblyInfo.cache
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/obj/Debug/net9.0/blazor_dotnet06.RazorAssemblyInfo.cs
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/obj/Debug/net9.0/blazor_dotnet06.sourcelink.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/obj/Debug/net9.0/rjimswa.dswa.cache.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/obj/Debug/net9.0/rjsmrazor.dswa.cache.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/obj/Debug/net9.0/scopedcss/bundle/blazor_dotnet06.styles.css
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/obj/Debug/net9.0/compressed/u3bnnfwjki-{0}-r3k5pmcmhl-r3k5pmcmhl.gz
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/obj/Debug/net9.0/compressed/pebpp67aiu-{0}-h0dr7gao6k-h0dr7gao6k.gz
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/obj/Debug/net9.0/staticwebassets.build.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/obj/Debug/net9.0/staticwebassets.build.json.cache
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/obj/Debug/net9.0/staticwebassets.development.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/obj/Debug/net9.0/staticwebassets.build.endpoints.json
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/obj/Debug/net9.0/swae.build.ex.cache
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/obj/Debug/net9.0/blazor_d.C5AA5DCB.Up2Date
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/obj/Debug/net9.0/blazor_dotnet06.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/obj/Debug/net9.0/refint/blazor_dotnet06.dll
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/obj/Debug/net9.0/blazor_dotnet06.pdb
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/obj/Debug/net9.0/blazor_dotnet06.genruntimeconfig.cache
+/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/BlazorWeb/blazor_web/obj/Debug/net9.0/ref/blazor_dotnet06.dll
