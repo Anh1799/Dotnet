@@ -1,0 +1,5 @@
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/LS11/SOLID/obj/Debug/net10.0/SOLID.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/LS11/SOLID/obj/Debug/net10.0/SOLID.AssemblyInfoInputs.cache
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/LS11/SOLID/obj/Debug/net10.0/SOLID.AssemblyInfo.cs
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/LS11/SOLID/obj/Debug/net10.0/SOLID.csproj.CoreCompileInputs.cache
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/LS11/SOLID/obj/Debug/net10.0/SOLID.sourcelink.json

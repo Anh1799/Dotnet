@@ -1,0 +1,15 @@
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/B12_OOP/ql_menu/obj/Debug/net10.0/ql_menu.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/B12_OOP/ql_menu/obj/Debug/net10.0/ql_menu.AssemblyInfoInputs.cache
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/B12_OOP/ql_menu/obj/Debug/net10.0/ql_menu.AssemblyInfo.cs
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/B12_OOP/ql_menu/obj/Debug/net10.0/ql_menu.csproj.CoreCompileInputs.cache
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/B12_OOP/ql_menu/obj/Debug/net10.0/ql_menu.sourcelink.json
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/B12_OOP/ql_menu/bin/Debug/net10.0/ql_menu
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/B12_OOP/ql_menu/bin/Debug/net10.0/ql_menu.deps.json
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/B12_OOP/ql_menu/bin/Debug/net10.0/ql_menu.runtimeconfig.json
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/B12_OOP/ql_menu/bin/Debug/net10.0/ql_menu.dll
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/B12_OOP/ql_menu/bin/Debug/net10.0/ql_menu.pdb
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/B12_OOP/ql_menu/obj/Debug/net10.0/ql_menu.dll
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/B12_OOP/ql_menu/obj/Debug/net10.0/refint/ql_menu.dll
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/B12_OOP/ql_menu/obj/Debug/net10.0/ql_menu.pdb
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/B12_OOP/ql_menu/obj/Debug/net10.0/ql_menu.genruntimeconfig.cache
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/B12_OOP/ql_menu/obj/Debug/net10.0/ref/ql_menu.dll

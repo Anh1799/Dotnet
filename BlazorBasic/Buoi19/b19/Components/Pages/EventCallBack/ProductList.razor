@@ -1,0 +1,55 @@
+@page "/product-list"
+
+<PageTitle>Product List</PageTitle>
+
+
+@* render foreach sp trong list ra giao dien
+
+
+
+ mỗi sp là 1 component con nhận vào 1 object là sản phẩm đó để hiển thị thông tin sp - productCard.razor
+
+ *@
+
+
+<div class="container">
+    <div class="row">
+        @foreach (var item in lst)
+        {
+            <ProductCard sanPham="@item" ThemGioHang="AddToCart" />
+        }
+    </div>
+
+    <h3>Gio hang (@cart.Count())</h3>
+    <div class="row">
+        @foreach (var item in cart)
+        {
+            <p class="">@item.Name - @item.Price</p>
+        }
+
+    </div>
+</div>
+@code {
+    // ds sp
+    List<ProductCardVM> lst = new List<ProductCardVM>
+    {
+        new ProductCardVM { Name = "Product 1", Price = 19.99m, Image = "https://picsum.photos/200", Description = "Description for product 1" },
+        new ProductCardVM { Name = "Product 2", Price = 29.99m, Image = "https://picsum.photos/200", Description = "Description for product 2" },
+        new ProductCardVM { Name = "Product 3", Price = 39.99m, Image = "https://picsum.photos/200", Description = "Description for product 3" }
+    };
+    // class là producrCardVM ten gia image description
+
+    // list sản phẩm
+
+    // ds gio hang
+    List<ProductCardVM> cart = new List<ProductCardVM>();
+
+    // ham them gio hang
+
+    public async Task AddToCart(ProductCardVM sp)
+    {
+        await Task.Delay( millisecondsDelay: 3000); // gia lap thoi gian xu ly
+        cart.Add(sp);
+        Console.WriteLine("Đã thêm");
+    }
+}

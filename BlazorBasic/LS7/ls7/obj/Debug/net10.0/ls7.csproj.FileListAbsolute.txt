@@ -1,0 +1,15 @@
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/LS7/ls7/obj/Debug/net10.0/ls7.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/LS7/ls7/obj/Debug/net10.0/ls7.AssemblyInfoInputs.cache
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/LS7/ls7/obj/Debug/net10.0/ls7.AssemblyInfo.cs
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/LS7/ls7/obj/Debug/net10.0/ls7.csproj.CoreCompileInputs.cache
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/LS7/ls7/obj/Debug/net10.0/ls7.sourcelink.json
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/LS7/ls7/bin/Debug/net10.0/ls7
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/LS7/ls7/bin/Debug/net10.0/ls7.deps.json
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/LS7/ls7/bin/Debug/net10.0/ls7.runtimeconfig.json
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/LS7/ls7/bin/Debug/net10.0/ls7.dll
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/LS7/ls7/bin/Debug/net10.0/ls7.pdb
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/LS7/ls7/obj/Debug/net10.0/ls7.dll
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/LS7/ls7/obj/Debug/net10.0/refint/ls7.dll
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/LS7/ls7/obj/Debug/net10.0/ls7.pdb
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/LS7/ls7/obj/Debug/net10.0/ls7.genruntimeconfig.cache
+/Users/anhnguyen/Documents/BC-DotNet/Dotnet/LS7/ls7/obj/Debug/net10.0/ref/ls7.dll

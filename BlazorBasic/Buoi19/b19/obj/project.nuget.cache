@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "/Mpegs90i8Q=",
+  "success": true,
+  "projectFilePath": "/Users/anhnguyen/Library/Mobile Documents/com~apple~CloudDocs/Documents/BC-DotNet/Dotnet/Buoi19/b19/b19.csproj",
+  "expectedPackageFiles": [
+    "/Users/anhnguyen/.nuget/packages/microsoft.aspnetcore.app.internal.assets/10.0.13/microsoft.aspnetcore.app.internal.assets.10.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}

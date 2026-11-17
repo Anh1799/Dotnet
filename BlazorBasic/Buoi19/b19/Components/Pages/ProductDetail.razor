@@ -1,0 +1,35 @@
+@* /product/sanpham1
+    /product/sanpham2
+    /product/sanpham3
+    La nhung ma san pham tuy y
+*@
+
+@page "/product/{maSp}"
+
+@* {maSp} : nhan gia tri tu dong tu URL *@
+
+<div class="container">
+
+<a href="/product"> quay lai</a>
+<h1>Product detail</h1>
+<p>Ma san pham : @maSp</p>
+<p>Ten san pham : @name</p>
+<p>Tuoi : @age</p>
+
+</div>
+
+@code{
+    // route parameter : lay gia tri tu URL
+    @* [Parameter] de lay gia tri tu URL *@
+    [Parameter]
+    public string? maSp {get;set;}
+
+// query param 
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public string? name {get;set;}
+
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public int age {get;set;}
+}
