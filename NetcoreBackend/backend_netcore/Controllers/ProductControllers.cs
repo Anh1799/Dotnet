@@ -19,8 +19,18 @@ namespace backend_netcore.Controllers
             new ProductDTO() { Id = 2, Name = "Product 2", Price = 20000 },
             new ProductDTO() { Id = 3, Name = "Product 3", Price = 15000 }
         };
+
+
+        static ProductController()
+        {
+            foreach (var item in lstProductDTO)
+            {
+                item.Alias = HelperFunction.StringToSlug(item.Name);
+            }
+        }
         public ProductController()
         {
+
         }
 
         [HttpGet("GetAllProduct")]
@@ -32,31 +42,87 @@ namespace backend_netcore.Controllers
         [HttpGet("GetAllProductDTO")]
         public async Task<IActionResult> GetAllProductDTO()
         {
-            return Ok(lstProductDTO);
+            var respone = new ResponseTypeDTO<List<ProductDTO>>()
+            {
+                StatusCode = 200,
+                Message = "Success",
+                Content = lstProductDTO,
+                DateTime = DateTime.Now
+            };
+            return Ok(respone);
         }
+
+        // [HttpGet("GetAllProductDTO")]
+        // public async Task<IActionResult> GetAllProductDTO()
+        // {
+        //     var respone = new ResponseTypeDTO<List<ProductDTO>>()
+        //     {
+        //         StatusCode = 200,
+        //         Message = "Success",
+        //         Content = lstProductDTO,
+        //         DateTime = DateTime.Now
+        //     };
+        //     return StatusCode(StatusCodes.Status200OK, respone);
+        // }
 
         [HttpGet("GetProductById/{id}")]
         public async Task<IActionResult> GetProductById([FromRoute] int id)
         {
             // Kiem tra xem id co ton tai trong danh sach hay khong
             ProductDTO? prodDetail = await Task.FromResult(lstProductDTO.SingleOrDefault(item => item.Id == id));
-            if(prodDetail == null){
-                return BadRequest("Khong tim thay san pham voi id: " + id); // status code 400
+
+            var response = new ResponseTypeDTO<dynamic>()
+            {
+                StatusCode = 400,
+                Message = "Khong tim thay san pham voi id: " + id,
+                Content = null,
+                DateTime = DateTime.Now
+            };
+            if (prodDetail == null)
+            {
+                response.Content = "Khong tim thay san pham id: " + id;
+                return StatusCode(StatusCodes.Status400BadRequest, response); // status code 400
             }
-            else{
+
+            else
+            {
                 return Ok(prodDetail); // status code 200
             }
         }
 
         [HttpPost("AddProduct")] //FormBody là người dùng nhập liệu từ form 
-        public List<ProductDTO> AddProduct([FromBody] ProductDTO product)
+        public async Task<IActionResult> AddProduct([FromBody] ProductDTO product)
         {
+            // Kiem tra id co ton tai trong list chua? neu ton tai thi tra ve 400, neu chua ton tai thi them vao list va tra ve 200
+            var existingProduct = lstProductDTO.SingleOrDefault(p => p.Id == product.Id);
+            if (existingProduct != null)
+            {
+                var responseData = new ResponseTypeDTO<string>()
+                {
+                    StatusCode = 400,
+                    Message = "San pham da ton tai voi id: " + product.Id,
+                    Content = null,
+                    DateTime = DateTime.Now
+                };
+                return StatusCode(StatusCodes.Status400BadRequest, responseData);
+            }
+
+            // Tạo alias cho sản phẩm
+            product.Alias = HelperFunction.StringToSlug(product.Name);
+
             lstProductDTO.Add(product);
-            return lstProductDTO;
+            var response = new ResponseTypeDTO<List<ProductDTO>>()
+            {
+                StatusCode = 200,
+                Message = "Success",
+                Content = lstProductDTO,
+                DateTime = DateTime.Now
+            };
+            return Ok(response);
         }
 
         [HttpDelete("DeleteProduct/{id}")]
-        public List<ProductDTO> DeleteProduct([FromRoute] int id)
+        public async Task<IActionResult> DeleteProduct([FromRoute] int id)
         {
             //Lấy ra phần tử trong list từ id
             var productToRemove = lstProductDTO.FirstOrDefault(p => p.Id == id);
@@ -64,19 +130,59 @@ namespace backend_netcore.Controllers
             if (productToRemove != null)
             {
                 lstProductDTO.Remove(productToRemove);
+                var respone = new ResponseTypeDTO<List<ProductDTO>>()
+                {
+                    StatusCode = 200,
+                    Message = "Success",
+                    Content = lstProductDTO,
+                    DateTime = DateTime.Now
+                };
+                return Ok(respone);
             }
+            var responseDAte = new ResponseTypeDTO<string>()
+            {
+                StatusCode = 400,
+                Message = "Khong tim thay san pham voi id: " + id,
+                Content = null,
+                DateTime = DateTime.Now
+            };
+            return StatusCode(StatusCodes.Status400BadRequest, responseDAte);
 
-            return lstProductDTO;
         }
 
+        // Assss BBBaaa => assss bbbaaa
+        // JsoN => json
         [HttpGet("SearchProductByName")]
-        public List<ProductDTO> SearchProductByName([FromQuery] string name)
+        public async Task<IActionResult> SearchProductByName([FromQuery] string keyword)
         {
-            return lstProductDTO.Where(p => p.Name.Contains(name)).ToList();
+            string name = HelperFunction.StringToSlug(keyword);
+            var lstSearchProduct = lstProductDTO.Where(p => p.Alias.Contains(name)).ToList();
+            if (lstSearchProduct.Count == 0)
+            {
+                var response = new ResponseTypeDTO<string>()
+                {
+                    StatusCode = 400,
+                    Message = "Khong tim thay san pham voi ten: " + keyword,
+                    Content = null,
+                    DateTime = DateTime.Now
+                };
+                return StatusCode(StatusCodes.Status400BadRequest, response);
+            }
+            else
+            {
+                var response = new ResponseTypeDTO<List<ProductDTO>>()
+                {
+                    StatusCode = 200,
+                    Message = @$"Found {lstSearchProduct.Count} products with name: {keyword}",
+                    Content = lstSearchProduct,
+                    DateTime = DateTime.Now
+                };
+                return Ok(response);
+            }
         }
 
         [HttpPut("UpdateProduct")]
-        public List<ProductDTO> UpdateProduct([FromBody] ProductDTO updatedProduct)
+        public async Task<IActionResult> UpdateProduct([FromBody] ProductDTO updatedProduct)
         {
             var productToUpdate = lstProductDTO.SingleOrDefault(p => p.Id == updatedProduct.Id);
             if (productToUpdate != null)
