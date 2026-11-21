@@ -1,0 +1,14 @@
+/Users/anhnguyen/Downloads/ThreadLock/bin/Debug/net10.0/ThreadLockDemo
+/Users/anhnguyen/Downloads/ThreadLock/bin/Debug/net10.0/ThreadLockDemo.deps.json
+/Users/anhnguyen/Downloads/ThreadLock/bin/Debug/net10.0/ThreadLockDemo.runtimeconfig.json
+/Users/anhnguyen/Downloads/ThreadLock/bin/Debug/net10.0/ThreadLockDemo.dll
+/Users/anhnguyen/Downloads/ThreadLock/bin/Debug/net10.0/ThreadLockDemo.pdb
+/Users/anhnguyen/Downloads/ThreadLock/obj/Debug/net10.0/ThreadLockDemo.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anhnguyen/Downloads/ThreadLock/obj/Debug/net10.0/ThreadLockDemo.AssemblyInfoInputs.cache
+/Users/anhnguyen/Downloads/ThreadLock/obj/Debug/net10.0/ThreadLockDemo.AssemblyInfo.cs
+/Users/anhnguyen/Downloads/ThreadLock/obj/Debug/net10.0/ThreadLockDemo.csproj.CoreCompileInputs.cache
+/Users/anhnguyen/Downloads/ThreadLock/obj/Debug/net10.0/ThreadLockDemo.dll
+/Users/anhnguyen/Downloads/ThreadLock/obj/Debug/net10.0/refint/ThreadLockDemo.dll
+/Users/anhnguyen/Downloads/ThreadLock/obj/Debug/net10.0/ThreadLockDemo.pdb
+/Users/anhnguyen/Downloads/ThreadLock/obj/Debug/net10.0/ThreadLockDemo.genruntimeconfig.cache
+/Users/anhnguyen/Downloads/ThreadLock/obj/Debug/net10.0/ref/ThreadLockDemo.dll
