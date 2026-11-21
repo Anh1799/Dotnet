@@ -1,0 +1,76 @@
+@using HealthCheck.Services
+@implements IDisposable
+@inject AuthService Auth
+@inject NavigationManager Nav
+
+<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">🏥 Khám Sức Khỏe</a>
+    </div>
+</div>
+
+<input type="checkbox" title="Navigation menu" class="navbar-toggler" />
+
+<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
+    <nav class="flex-column">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Trang chủ
+            </NavLink>
+        </div>
+
+        @if (Auth.IsLoggedIn)
+        {
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="ho-so">
+                    <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Hồ sơ cá nhân
+                </NavLink>
+            </div>
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="dat-lich">
+                    <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Đặt lịch khám
+                </NavLink>
+            </div>
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="lich-kham">
+                    <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Lịch của tôi
+                </NavLink>
+            </div>
+
+            <div class="px-3 mt-4 text-white-50 small">Đăng nhập: @Auth.CurrentUser!.Email</div>
+            <div class="nav-item px-3">
+                <a class="nav-link" href="" @onclick="Logout" @onclick:preventDefault>
+                    <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Đăng xuất
+                </a>
+            </div>
+        }
+        else
+        {
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="dang-nhap">
+                    <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Đăng nhập
+                </NavLink>
+            </div>
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="dang-ky">
+                    <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Đăng ký
+                </NavLink>
+            </div>
+        }
+    </nav>
+</div>
+
+@code {
+    // Khi đăng nhập / đăng xuất thì menu tự cập nhật
+    protected override void OnInitialized() => Auth.OnChange += Refresh;
+
+    private void Refresh() => InvokeAsync(StateHasChanged);
+
+    private void Logout()
+    {
+        Auth.Logout();
+        Nav.NavigateTo("dang-nhap");
+    }
+
+    public void Dispose() => Auth.OnChange -= Refresh;
+}

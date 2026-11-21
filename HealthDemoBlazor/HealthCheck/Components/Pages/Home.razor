@@ -1,0 +1,47 @@
+@page "/"
+@using HealthCheck.Models
+@using HealthCheck.Services
+@inject AuthService Auth
+@inject HealthDataStore Store
+
+<PageTitle>Đăng ký khám sức khỏe</PageTitle>
+
+<div class="p-4 mb-4 bg-light rounded-3">
+    <h1 class="display-6">Đăng ký khám sức khỏe trực tuyến</h1>
+    <p class="lead">Đặt lịch nhanh chóng, không phải xếp hàng chờ đợi.</p>
+
+    @if (Auth.IsLoggedIn)
+    {
+        <a class="btn btn-primary me-2" href="dat-lich">Đặt lịch khám</a>
+        <a class="btn btn-outline-primary" href="ho-so">Hồ sơ của tôi</a>
+    }
+    else
+    {
+        <a class="btn btn-primary me-2" href="dang-ky">Tạo tài khoản</a>
+        <a class="btn btn-outline-primary" href="dang-nhap">Đăng nhập</a>
+    }
+</div>
+
+<h4 class="mb-3">Các gói khám</h4>
+<div class="row g-3">
+    @foreach (var p in Store.Packages)
+    {
+        <div class="col-md-6 col-lg-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h6 class="card-title">@p.Name</h6>
+                    <p class="text-primary fw-bold">@p.Price.ToVnd()</p>
+                    <p class="card-text small text-muted">@p.Description</p>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<h4 class="mt-4">Quy trình</h4>
+<ol>
+    <li>Tạo tài khoản và đăng nhập</li>
+    <li>Điền hồ sơ cá nhân</li>
+    <li>Chọn gói khám, cơ sở, ngày và giờ</li>
+    <li>Nhận mã lịch hẹn và đến khám đúng giờ</li>
+</ol>

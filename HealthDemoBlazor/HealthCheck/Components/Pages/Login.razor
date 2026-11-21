@@ -1,0 +1,72 @@
+@page "/dang-nhap"
+@using HealthCheck.Models
+@using HealthCheck.Services
+@inject HealthDataStore Store
+@inject AuthService Auth
+@inject NavigationManager Nav
+
+<PageTitle>Đăng nhập</PageTitle>
+
+<div class="row justify-content-center">
+    <div class="col-md-6 col-lg-5">
+        <div class="card shadow-sm">
+            <div class="card-body p-4">
+                <h3 class="mb-3">Đăng nhập</h3>
+
+                @if (Registered == 1)
+                {
+                    <div class="alert alert-success py-2">Đăng ký thành công! Mời bạn đăng nhập.</div>
+                }
+
+                <EditForm Model="model" OnValidSubmit="HandleLogin" FormName="login">
+                    <DataAnnotationsValidator />
+
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <InputText @bind-Value="model.Email" class="form-control" />
+                        <ValidationMessage For="() => model.Email" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Mật khẩu</label>
+                        <InputText type="password" @bind-Value="model.Password" class="form-control" />
+                        <ValidationMessage For="() => model.Password" />
+                    </div>
+
+                    @if (error != null)
+                    {
+                        <div class="alert alert-danger py-2">@error</div>
+                    }
+
+                    <button type="submit" class="btn btn-primary w-100">Đăng nhập</button>
+                </EditForm>
+
+                <p class="mt-3 mb-0 text-center">
+                    Chưa có tài khoản? <a href="dang-ky">Đăng ký</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    [SupplyParameterFromQuery] public int? Registered { get; set; }
+
+    private LoginModel model = new();
+    private string? error;
+
+    private void HandleLogin()
+    {
+        var user = Store.ValidateLogin(model.Email, model.Password);
+        if (user == null)
+        {
+            error = "Email hoặc mật khẩu không đúng";
+            return;
+        }
+
+        Auth.Login(user);
+
+        // Chưa có hồ sơ thì chuyển tới trang hồ sơ, có rồi thì tới đặt lịch
+        Nav.NavigateTo(Store.GetProfile(user.Id) == null ? "ho-so" : "dat-lich");
+    }
+}

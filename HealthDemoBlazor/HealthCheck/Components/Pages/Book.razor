@@ -1,0 +1,148 @@
+@page "/dat-lich"
+@using HealthCheck.Models
+@using HealthCheck.Services
+@using HealthCheck.Components.Shared
+@inject HealthDataStore Store
+@inject AuthService Auth
+
+<PageTitle>Đặt lịch khám</PageTitle>
+
+<h3 class="mb-3">Đặt lịch khám sức khỏe</h3>
+
+<RequireLogin>
+    @if (!hasProfile)
+    {
+        <div class="alert alert-warning">
+            Bạn chưa có hồ sơ. Vui lòng <a href="ho-so">điền hồ sơ cá nhân</a> trước.
+        </div>
+    }
+    else if (booked != null)
+    {
+        <div class="card border-success shadow-sm">
+            <div class="card-body">
+                <h4 class="text-success">✓ Đặt lịch thành công!</h4>
+                <p class="mb-1">Mã lịch hẹn: <strong>@booked.Code</strong></p>
+                <p class="mb-1">Gói khám: @booked.Package.Name (@booked.Package.Price.ToVnd())</p>
+                <p class="mb-1">Cơ sở: @booked.Facility</p>
+                <p class="mb-3">Thời gian: @booked.Date.ToString("dd/MM/yyyy"), @booked.TimeSlot</p>
+                <p class="small text-muted">Vui lòng đến trước 15 phút, mang theo CCCD và thẻ BHYT (nếu có). Nhịn ăn sáng nếu có xét nghiệm máu.</p>
+                <a class="btn btn-primary me-2" href="lich-kham">Xem lịch của tôi</a>
+                <button class="btn btn-outline-secondary" @onclick="Reset">Đặt lịch khác</button>
+            </div>
+        </div>
+    }
+    else
+    {
+        <EditForm Model="form" OnValidSubmit="Submit" FormName="book">
+            <DataAnnotationsValidator />
+
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h6>1. Chọn gói khám</h6>
+                    <div class="row g-2 mb-3">
+                        @foreach (var p in Store.Packages)
+                        {
+                            <div class="col-md-6">
+                                <div class="border rounded p-2 h-100 @(form.PackageId == p.Id ? "border-primary bg-light" : "")"
+                                     style="cursor:pointer" @onclick="() => form.PackageId = p.Id">
+                                    <input type="radio" class="form-check-input me-1" checked="@(form.PackageId == p.Id)" />
+                                    <strong>@p.Name</strong> – <span class="text-primary">@p.Price.ToVnd()</span>
+                                    <div class="small text-muted">@p.Description</div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                    <ValidationMessage For="() => form.PackageId" />
+
+                    <h6 class="mt-3">2. Chọn cơ sở và ngày</h6>
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-7">
+                            <InputSelect @bind-Value="form.Facility" class="form-select">
+                                <option value="">-- Chọn cơ sở --</option>
+                                @foreach (var f in Store.Facilities)
+                                {
+                                    <option value="@f">@f</option>
+                                }
+                            </InputSelect>
+                            <ValidationMessage For="() => form.Facility" />
+                        </div>
+                        <div class="col-md-5">
+                            <InputDate @bind-Value="form.Date" class="form-control" min="@minDate" />
+                            <ValidationMessage For="() => form.Date" />
+                        </div>
+                    </div>
+
+                    <h6>3. Chọn khung giờ</h6>
+                    @if (string.IsNullOrEmpty(form.Facility) || form.Date == null)
+                    {
+                        <p class="text-muted small">Chọn cơ sở và ngày để xem giờ còn trống.</p>
+                    }
+                    else
+                    {
+                        <div class="d-flex flex-wrap gap-2 mb-1">
+                            @foreach (var slot in Store.TimeSlots)
+                            {
+                                var left = HealthDataStore.MaxPerSlot - Store.CountBooked(form.Facility, form.Date.Value, slot);
+                                <button type="button" disabled="@(left <= 0)"
+                                        class="btn btn-sm @(form.TimeSlot == slot ? "btn-primary" : "btn-outline-primary")"
+                                        @onclick="() => form.TimeSlot = slot">
+                                    @slot <br /><small>@(left > 0 ? $"còn {left} chỗ" : "hết chỗ")</small>
+                                </button>
+                            }
+                        </div>
+                    }
+                    <ValidationMessage For="() => form.TimeSlot" />
+
+                    <h6 class="mt-3">4. Triệu chứng / yêu cầu thêm</h6>
+                    <InputTextArea @bind-Value="form.Symptoms" class="form-control mb-3" rows="3"
+                                   placeholder="Ví dụ: hay đau đầu, muốn khám thêm mắt..." />
+
+                    <div class="form-check">
+                        <InputCheckbox @bind-Value="form.AgreeTerms" class="form-check-input" id="agree" />
+                        <label class="form-check-label" for="agree">
+                            Tôi xác nhận thông tin là chính xác và đồng ý với điều khoản khám chữa bệnh
+                        </label>
+                    </div>
+                    <ValidationMessage For="() => form.AgreeTerms" />
+
+                    @if (error != null)
+                    {
+                        <div class="alert alert-danger py-2 mt-3 mb-0">@error</div>
+                    }
+                </div>
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-primary">Xác nhận đặt lịch</button>
+                </div>
+            </div>
+        </EditForm>
+    }
+</RequireLogin>
+
+@code {
+    private AppointmentForm form = new();
+    private Appointment? booked;
+    private string? error;
+    private bool hasProfile;
+    private string minDate = DateTime.Today.AddDays(1).ToString("yyyy-MM-dd");
+
+    protected override void OnInitialized()
+    {
+        if (Auth.IsLoggedIn)
+            hasProfile = Store.GetProfile(Auth.CurrentUser!.Id) != null;
+    }
+
+    private void Submit()
+    {
+        error = null;
+        var (appt, err) = Store.Book(Auth.CurrentUser!.Id, form);
+        if (appt == null) { error = err; return; }
+        booked = appt;
+    }
+
+    private void Reset()
+    {
+        form = new();
+        booked = null;
+        error = null;
+    }
+}

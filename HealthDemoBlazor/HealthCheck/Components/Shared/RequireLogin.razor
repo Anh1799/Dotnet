@@ -1,0 +1,19 @@
+@using HealthCheck.Services
+@inject AuthService Auth
+
+@* Bọc nội dung trang: chỉ hiện khi đã đăng nhập *@
+@if (Auth.IsLoggedIn)
+{
+    @ChildContent
+}
+else
+{
+    <div class="alert alert-warning">
+        Bạn cần <a href="dang-nhap">đăng nhập</a> để sử dụng chức năng này.
+        Chưa có tài khoản? <a href="dang-ky">Đăng ký ngay</a>.
+    </div>
+}
+
+@code {
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+}

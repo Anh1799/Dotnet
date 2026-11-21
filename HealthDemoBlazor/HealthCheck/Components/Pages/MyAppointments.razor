@@ -1,0 +1,93 @@
+@page "/lich-kham"
+@using HealthCheck.Models
+@using HealthCheck.Services
+@using HealthCheck.Components.Shared
+@inject HealthDataStore Store
+@inject AuthService Auth
+
+<PageTitle>Lịch khám của tôi</PageTitle>
+
+<h3 class="mb-3">Lịch khám của tôi</h3>
+
+<RequireLogin>
+    @if (items.Count == 0)
+    {
+        <div class="alert alert-light border">
+            Bạn chưa có lịch khám nào. <a href="dat-lich">Đặt lịch ngay</a>
+        </div>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table table-hover align-middle">
+                <thead class="table-light">
+                    <tr>
+                        <th>Mã</th>
+                        <th>Gói khám</th>
+                        <th>Cơ sở</th>
+                        <th>Ngày</th>
+                        <th>Giờ</th>
+                        <th>Trạng thái</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var a in items)
+                    {
+                        <tr>
+                            <td><strong>@a.Code</strong></td>
+                            <td>@a.Package.Name</td>
+                            <td class="small">@a.Facility</td>
+                            <td>@a.Date.ToString("dd/MM/yyyy")</td>
+                            <td>@a.TimeSlot</td>
+                            <td>
+                                @if (a.Status == AppointmentStatus.Confirmed)
+                                {
+                                    <span class="badge bg-success">Đã xác nhận</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-secondary">Đã hủy</span>
+                                }
+                            </td>
+                            <td>
+                                @if (a.Status == AppointmentStatus.Confirmed)
+                                {
+                                    @if (confirmId == a.Id)
+                                    {
+                                        <button class="btn btn-sm btn-danger me-1" @onclick="() => Cancel(a.Id)">Chắc chắn hủy</button>
+                                        <button class="btn btn-sm btn-light" @onclick="() => confirmId = null">Không</button>
+                                    }
+                                    else
+                                    {
+                                        <button class="btn btn-sm btn-outline-danger" @onclick="() => confirmId = a.Id">Hủy lịch</button>
+                                    }
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</RequireLogin>
+
+@code {
+    private List<Appointment> items = new();
+    private int? confirmId;
+
+    protected override void OnInitialized() => Load();
+
+    private void Load()
+    {
+        if (Auth.IsLoggedIn)
+            items = Store.GetAppointments(Auth.CurrentUser!.Id);
+    }
+
+    private void Cancel(int id)
+    {
+        Store.Cancel(Auth.CurrentUser!.Id, id);
+        confirmId = null;
+        Load();
+    }
+}

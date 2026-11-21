@@ -1,0 +1,110 @@
+@page "/ho-so"
+@using HealthCheck.Models
+@using HealthCheck.Services
+@using HealthCheck.Components.Shared
+@inject HealthDataStore Store
+@inject AuthService Auth
+@inject NavigationManager Nav
+
+<PageTitle>Hồ sơ cá nhân</PageTitle>
+
+<h3 class="mb-3">Hồ sơ cá nhân</h3>
+
+<RequireLogin>
+    @if (isNew)
+    {
+        <div class="alert alert-info py-2">Vui lòng điền thông tin trước khi đặt lịch khám.</div>
+    }
+
+    <EditForm Model="profile" OnValidSubmit="Save" FormName="profile">
+        <DataAnnotationsValidator />
+
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label class="form-label">Họ và tên *</label>
+                        <InputText @bind-Value="profile.FullName" class="form-control" placeholder="Nguyễn Văn A" />
+                        <ValidationMessage For="() => profile.FullName" />
+                    </div>
+
+                    <div class="col-md-3">
+                        <label class="form-label">Ngày sinh *</label>
+                        <InputDate @bind-Value="profile.DateOfBirth" class="form-control" />
+                        <ValidationMessage For="() => profile.DateOfBirth" />
+                    </div>
+
+                    <div class="col-md-3">
+                        <label class="form-label">Giới tính *</label>
+                        <InputSelect @bind-Value="profile.Gender" class="form-select">
+                            <option value="">-- Chọn --</option>
+                            <option value="Nam">Nam</option>
+                            <option value="Nữ">Nữ</option>
+                            <option value="Khác">Khác</option>
+                        </InputSelect>
+                        <ValidationMessage For="() => profile.Gender" />
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="form-label">Số điện thoại *</label>
+                        <InputText @bind-Value="profile.Phone" class="form-control" placeholder="0901234567" />
+                        <ValidationMessage For="() => profile.Phone" />
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="form-label">Số CCCD *</label>
+                        <InputText @bind-Value="profile.CitizenId" class="form-control" />
+                        <ValidationMessage For="() => profile.CitizenId" />
+                    </div>
+
+                    <div class="col-12">
+                        <label class="form-label">Địa chỉ *</label>
+                        <InputText @bind-Value="profile.Address" class="form-control" />
+                        <ValidationMessage For="() => profile.Address" />
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="form-label">Số thẻ BHYT (nếu có)</label>
+                        <InputText @bind-Value="profile.InsuranceNumber" class="form-control" />
+                    </div>
+
+                    <div class="col-12">
+                        <label class="form-label">Tiền sử bệnh / dị ứng (nếu có)</label>
+                        <InputTextArea @bind-Value="profile.MedicalHistory" class="form-control" rows="3" />
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer d-flex gap-2 align-items-center">
+                <button type="submit" class="btn btn-primary">Lưu hồ sơ</button>
+                @if (saved)
+                {
+                    <span class="text-success">✓ Đã lưu</span>
+                    <a class="btn btn-outline-primary ms-auto" href="dat-lich">Tiếp tục đặt lịch →</a>
+                }
+            </div>
+        </div>
+    </EditForm>
+</RequireLogin>
+
+@code {
+    private PatientProfile profile = new();
+    private bool isNew;
+    private bool saved;
+
+    protected override void OnInitialized()
+    {
+        if (!Auth.IsLoggedIn) return;
+
+        var existing = Store.GetProfile(Auth.CurrentUser!.Id);
+        isNew = existing == null;
+        profile = existing ?? new PatientProfile { UserId = Auth.CurrentUser.Id };
+    }
+
+    private void Save()
+    {
+        profile.UserId = Auth.CurrentUser!.Id;
+        Store.SaveProfile(profile);
+        saved = true;
+        isNew = false;
+    }
+}
